@@ -1,0 +1,264 @@
+Manuscript coverage
+
+Scope and current status
+
+The target is ../submission-Oct2026/LaestadiusCsirik_HK.tex, SHA-256
+0338c9a1017ff9e7e8629c57f500dc8e790ae970514afa74daf5f68dba10603c.
+The mathematical results and their proof calculations are represented by
+the modules below. The library and namespace are MagHK. SOURCE_REVIEW.txt
+records the comparison with the previously checked manuscript and the
+October submission changes. LAST_RUN.txt and verification.json record
+the actual consolidated compiler and axiom-audit result separately.
+
+The conclusions use explicitly quantified standard background theorems.
+ASSUMPTIONS.txt gives the trust boundary. The user permits well-known
+operator theory, elliptic regularity and UCP. A passing axiom audit does
+not prove those hypotheses. It checks that no additional Lean axioms,
+including sorryAx, occur in the project declarations.
+
+One-particle proposition, prop:one-particle
+
+OneParticleTheorem.one_particle_hk proves equality of continuous scalar
+potentials up to the energy difference and constructs a global scalar
+whose gradient is the difference of the C1 vector potentials. The inputs
+are actual nonzero H1_loc weak solutions and almost-everywhere equality
+of their literal densities and currents. WeakDifferential, OneParticleWeak
+and OneParticleCurl connect weak derivatives, elliptic representatives,
+local quotient identities and positive-measure UCP. Poincare supplies the
+explicit global straight-segment primitive.
+
+OneParticleTheorem.one_particle_curl proves the weak curl identity on the
+nonvanishing open set and the global zero-field consequence of zero current.
+OneParticleContinuity also proves the actual weak derivatives of the current
+and their zero divergence from the weak eigen-equation. These files have
+passed their individual Lean checks. The submission supplement
+one_particle_nodal_set explicitly proves that the C1 representative has a
+closed null nodal set and an open dense positive-density region. It does
+not assert everywhere nonvanishing or a continuous Hessian.
+
+Time reversal, lem:time-reversal
+
+ManyBodyTimeReversal constructs conjugation on the actual antisymmetric
+L2 space for every finite particle number. Its operator has the actual
+inverse-image domain. The differential and integral-form identities are
+proved before the general antiunitary spectral and Friedrichs-form
+transport theorems are applied. Density and weak-momentum current
+transformation are proved. The current theorem explicitly requires the
+actual weak magnetic momenta in L2. CurrentCompletion derives those momenta
+from operator-domain membership under an explicit generic kinetic-control
+estimate. It also proves current-slice integrability by Fubini and Holder.
+The estimate is not inferred from semiboundedness alone. ManyBodyDensity
+proves integrability, nonnegativity and total particle-number mass of the
+literal marginal density for every positive particle number using Fubini.
+
+OperatorTimeReversal gives the concrete Cartesian two-particle version.
+MonopoleTimeReversal gives the patchwise charge-reversing version, including
+Slater equivalence, density preservation and current reversal. These
+modules have passed their individual checks.
+
+Noninteracting theorem, thm:noninteracting
+
+NoninteractingTheorem.bounded_counterexample and gaussian_counterexample
+assemble the actual opposite-field operators, their unique normalized
+isolated ground states, their common density, zero current and gauge
+inequivalence. Both assembly theorems have passed Lean. The Gaussian
+statement holds for every c>1 and includes the exact displayed density.
+The bounded statement includes smoothness and membership in the literal
+scalar and vector sum spaces. WeakGauge upgrades the obstruction to
+almost-everywhere weak gradients. CurrentCompletion strengthens both
+counterexample assemblies to current zero at every point, including the
+axis, while retaining every original conclusion.
+
+The proof chain checks the literal radial equations, equal-norm parameter,
+normalizations, Cartesian smooth extensions, nonzero curl, orbitals,
+Slater determinants, marginals and current cancellation. It connects the
+orbitals to Friedrichs realizations, planar and axial spectra, tensor
+sums and exterior-square filling. Generic spectral and domain theorems
+remain explicit background inputs, with the concrete hypotheses proved.
+
+GaussianCompactness establishes compactness of the same two operators
+from the proved quadratic lower bound. GaussianOutside proves that the
+actual Gaussian scalar lies outside L^(3/2)+L-infinity.
+
+The raw profileV expression is only identified with the paper for r>0.
+Its Lean value at zero is not the smooth extension. regularProfileV and
+boundedScalar give the proved smooth extension, with value -24-2t.
+
+Positive margin, eq:margin and noninteracting Step 5
+
+Noninteracting checks the exact derivative identity, sharp radial bound,
+all estimates on K and strict positivity of 20(1-2/(3 sqrt(3)))-11.
+The proof uses exact real arithmetic, without numerical approximation.
+
+Planar ordering lemma, lem:ordering
+
+Ordering and RadialRealization use actual weighted L2 functions, literal
+weak-derivative quadratic forms and graph domains. The factorization,
+integer-sector inequalities, strict multiplier comparison and eigenvector
+transfer are proved. OrderingTheorem adds the standalone lemma using actual
+Friedrichs graphs, closed-product domains and unitary direct sums, without
+the concrete origin/tail assumptions of the examples. General Sturm, Friedrichs and closed-product theorems
+are explicit. BoundedRealization and GaussianRealization discharge the
+coefficient, endpoint and finite-energy hypotheses for each example.
+PartnerAsymptotics and RadialEndpoints supply the concrete endpoint bounds.
+
+The manuscript display following only form-domain containment writes
+<psi,L_{-1}psi>. Its rigorous meaning at that step is the closed quadratic
+form q_{-1}[psi]. The Lean proof uses the form. No operator-domain membership
+is inferred there. See OrderingNotes.txt. The manuscript was not edited.
+
+Monopole theorem, thm:monopole
+
+MonopoleGeometry, MonopoleSphere, MonopoleQuadrature, MonopolePairLaw and
+MonopoleCoordinates prove the coordinate measure transport and spherical
+pair integration law. MonopoleTrial and MonopoleExpectation connect the
+actual normalized trial determinant to its literal Coulomb expectation.
+The angular integral and radial Gamma moments give the strict gap estimate.
+
+MonopoleRealization, MonopoleGround and MonopoleHilbert construct the
+actual antisymmetric section L2 states and identify the actual Friedrichs
+operators, shell spectrum, trial energy and perturbative ground-state gap.
+General monopole harmonic, oscillator, KLMN and min-max facts are explicit.
+The resulting numerical gap is greater than 533/500.
+
+SpinGroup proves triviality of one-dimensional SU(2) characters. SpinChart
+and SpinGeometry connect the lifted action to literal spatial rotations
+and local phases. MonopoleFormCovariance and MonopoleRayleigh derive the
+singlet conclusion from form invariance and simplicity. The actual Coulomb
+rotation invariance is checked in MonopoleRotationPotential.
+
+MonopoleOccupied proves invariance of a Slater state's occupied two-plane.
+MonopoleMultiplet derives the common-radial doublet from the general
+isotypic decomposition. MonopoleCorrelation and MonopoleNonSlater combine
+the actual interacting eigen-equation and tensor domain identity with the
+proved angular Coulomb obstruction. The non-Slater conclusion is derived,
+not supplied as an assumption.
+
+MonopoleCurrent proves L1 integrability of the literal marginal current.
+MonopoleCurrentBound derives the sharp factor-two bound from the actual
+orthonormal spherical frame and Holder inequality, and transports it to
+the literal Euclidean marginal.
+MonopoleCovariance proves its rotation covariance. MonopoleCurrentAveraging
+uses the general L1 rotation fixed-subspace theorem to obtain a measurable
+radial representative. MonopoleStationarity and MonopoleCurrentTest derive
+the weak stationary test equation from the actual eigenform. MonopoleWeakFlux
+then proves that an integrable radial stationary field vanishes. No special
+continuity assumption on the bound-state marginal current is used.
+
+MonopolePositive and MonopoleCurrentConclusion assemble these results.
+MonopoleCounterexample joins them to the opposite-charge operator and
+literal Euclidean marginals via MonopoleInverse and MonopoleTimeReversal.
+These final assemblies have passed their individual Lean checks.
+MonopoleSubmission.exists_pair retains a single common measurable radial
+physical density for the same opposite-charge pair, proves equality of both
+actual interacting form domains with their free oscillator domains, and
+collects both compact-resolvent results. Its angular_determinant_display
+matches the newly labelled eq:angular-determinant literally.
+MonopoleDensity also proves radiality of the literal physical density using
+the same general rotation fixed-space theorem, with no new premise.
+
+MonopoleFlux evaluates the actual spherical flux as 2 pi q for twice-charge
+q. It proves that opposite charges cannot differ by a local C2 gauge.
+WeakGauge supplies the corresponding weak-gradient obstruction.
+
+Endpoint lemma and appendix, lem:monopole-domains
+
+MonopoleEndpointDomains states actual maximal and Friedrichs radial
+domains with absolute continuity, the differential expression and the
+principal Wronskian boundary condition. It connects them to the same
+one-particle operator through RadialRestriction. General singular-oscillator
+and angular direct-sum theorems supply the spectral resolution and adjoint
+domains. The concrete q=+/-1 thresholds, only lowest-sector limit-circle
+classification, total deficiency indices (2,2), energy formula and literal
+Laguerre basis are checked. KLMN gives equality of the actual free and
+interacting form domains and compactness.
+
+MonopoleEndpointAsymptotics makes both independent origin and infinity
+solution asymptotics explicit through uniform singular-oscillator theory,
+including the nonprincipal branch's infinite energy for positive index.
+MonopoleDifferential checks the local angular differential operators and
+Casimir identity against the literal angular expression, the cross-product
+angular momentum, both lowest harmonics, and radial splitting.
+MonopoleRadialIsometry proves the norm-preserving u(r)Y(omega)/r embedding
+for actual L2 states and normalized angular functions.
+
+The minimal operator core uses regular angular harmonics and compact
+radial factors, omitting only the origin. The polar-axis-cutoff core is
+used for the Friedrichs form, not for the minimal operator.
+
+Supplementary preliminary and geometric assertions
+
+GeneralGauge, GeneralGaugeShift and GeneralGaugeWeak cover literal smooth
+phase, momentum, form, density and current identities with actual unitary
+and operator-domain transport. Scalar shifts, the paramagnetic law and the
+weak gauge product rule have passed their individual checks.
+FunctionSpaces proves sum-space multiplication, scalar pairing and the
+literal Cartesian |A|^2 inclusion. MarginalSpaces proves the H1 density
+and current memberships and mass formulas for one and two particles.
+BanachDuality proves both directions of the density and current dual
+identifications, including uniqueness modulo almost-everywhere equality.
+PotentialSpaceIdentification connects the scalar components with the
+literal Cartesian vector sum space. All these modules have passed.
+DiracString and MonopoleGlobalPotential have passed. They prove the single
+Dirac-string sum-space exclusion and the global C1-potential obstruction
+without new background assumptions. OperatorPreliminaries has passed and
+provides the exact essential spectra and weak H1/H2 domain descriptions
+for the same bounded-construction operators. MonopoleHardy connects the
+exact magnetic Hardy constant and the explicit Coulomb form bound.
+MonopolePatches proves the literal Cartesian north/south formulas,
+smoothness on each patch, monopole curls and transition difference.
+MonopolePatchGauge gives local azimuthal primitives and the chart-frame
+identification. MonopoleTransition and MonopolePairTransition prove the
+single- and two-particle phase, covariant derivative, density and current
+gluing identities. These formulas add no external background premise.
+
+Further displayed calculations and supplementary results
+
+PotentialAsymptotics proves the displayed O(1/r) remainder, including the
+stronger limit r(U_t-21/2) tending to -9. GaussianGap proves that every
+nonzero zero-sector Gaussian eigenvalue is at least four.
+PlanarEndpointAsymptotics records the local regular/logarithmic and
+r/r-inverse solution branches through explicit uniform Sturm theory.
+
+CoordinateLaplacian and CoordinateMagnetic prove the general second-chain
+rule, Hessian contraction and expansion of squared covariant derivatives.
+MonopoleCartesianDifferential and MonopoleCartesianOperator instantiate
+these identities in the literal spherical chart. They identify the
+Cartesian operator with oneExpression, the momentum components with the
+frame derivatives, and the cross-product angular momentum and Casimir.
+These modules introduce no background premise.
+
+ExpPolynomialMoments and GaussianParameterBounds enclose the Gaussian
+normalization parameter between 3277/2000 and 3279/2000 using exact
+polynomial identities, exponential moments and rational inequalities.
+This is the precise meaning of the displayed approximation 1.639.
+
+ParamagneticDiscussion and MonopoleParamagnetic retain supplementary results
+from the earlier discussion, removed from the October submission. They identify the actual
+paramagnetic currents from the zero-current results. Opposite currents
+are proved unequal, even modulo almost-everywhere equality. Normalized
+ratios are restricted to the positive-density region. For the monopole,
+the curl is computed using the smooth representative minus the local
+connection. No pointwise derivative of an arbitrary measurable marginal,
+or unproved everywhere-positive monopole density, is asserted.
+
+PassiveSpin covers rem:spin and constructs the actual antisymmetric spin-labelled L2 spaces,
+with two-point counting measure for each spin. It fills the two lowest
+spatial orbitals twice and derives a unique normalized four-particle
+Slater ground state for both signs, doubled density and zero current.
+It also proves that the unrestricted two-particle ground fills the lowest
+spatial orbital twice, while the fully polarized determinant has higher
+energy and is not an unrestricted ground state. Uniform spin doubling,
+exterior filling and finite-rank Slater reduction are explicit background
+inputs. No Zeeman term is present. PassiveSpinCounterexample exposes a
+common positive excitation gap for both signs, and joins the four-particle
+assemblies to the weak gauge obstruction for the same potentials. Its
+bounded and Gaussian results retain the unrestricted two-particle exclusion.
+The Gaussian result holds for every c>1. The implication in rem:kohn-sham
+uses the fixed-scalar bounded counterexample.
+
+Scope exclusions
+
+Bibliographic priority, historical narrative, editorial remarks, schematic
+figures and discussion of possible future counterexamples are not Lean
+mathematical statements. They are not claimed as formally verified.

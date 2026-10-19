@@ -1,0 +1,1340 @@
+{
+  "timestamp_utc": "2026-10-19T05:39:31.369447+00:00",
+  "manuscript": "../submission-Oct2026/LaestadiusCsirik_HK.tex",
+  "manuscript_sha256": "0338c9a1017ff9e7e8629c57f500dc8e790ae970514afa74daf5f68dba10603c",
+  "toolchain": "leanprover/lean4:v4.34.0-rc2",
+  "compiler_version": "Lean (version 4.34.0-rc2, arm64-apple-darwin24.6.0, commit 6a10ac8c22beadecabdbb0919c2b50214762f91d, Release)",
+  "compiler_inputs": {
+    "lean_local.py": "84d72315fe6e7005ac27a104295ee77271672a641bed0a6ee40edb265277194a",
+    "lean-toolchain": "8190e75a201741065fe508b28955dd64dd72d090babe5f70ce6848879d68ae88",
+    "lake-manifest.json": "25ae276c93caa51c47d5208f584c279d05a14e14080524dc127571581f38f02e",
+    "verify.py": "259ae8c92aa93f05d9a6331d69a94a656969505ab4268ee362fc06a8d96fe2c5"
+  },
+  "parallel_jobs": 4,
+  "mathlib_revision": "85e3a25e006c35636f0e53b0e9296caca2685bc0",
+  "installed_mathlib_revision": "85e3a25e006c35636f0e53b0e9296caca2685bc0",
+  "installed_dependency_revisions": {
+    "mathlib": "85e3a25e006c35636f0e53b0e9296caca2685bc0",
+    "plausible": "d9598f07b1bc701f1e3aae163d2681c1fd978793",
+    "LeanSearchClient": "ba67e212be1197b84c1f1f6299488a10a3002713",
+    "importGraph": "d8823026ac7ef130c253089d95685f9877b95323",
+    "proofwidgets": "a8acbfd87375ff4abe14ce09db5b7664d383bc7f",
+    "aesop": "18889deb9e83ea7420ef51c160d6f88552e744e3",
+    "Qq": "507746ab8f4b643ccdacb2ec4cdb5853fa9f8ab3",
+    "batteries": "d54dddc581e08be364c278052863524bff7a99a9",
+    "Cli": "ab3a82db9fea14cf0fd7f5a2de650f4b534640af"
+  },
+  "installed_dependency_tracked_changes": {
+    "mathlib": [
+      " M scripts/add_module_set_option.py",
+      " M scripts/add_set_option.py",
+      " M scripts/bench/combine.py",
+      " M scripts/bench/measure.py",
+      " M scripts/bench/repeatedly.py",
+      " M scripts/dag_traversal.py",
+      " M scripts/downstream-tags.py",
+      " M scripts/fix_long_lines.py",
+      " M scripts/fix_nonlocal_set_option.py",
+      " M scripts/fix_unused.py",
+      " M scripts/fix_unused_simp_args.py",
+      " M scripts/githelper.py",
+      " M scripts/lake-build-wrapper.py",
+      " M scripts/lint-style.py",
+      " M scripts/parse_shake_output.py",
+      " M scripts/rm_module_set_option.py",
+      " M scripts/rm_set_option.py",
+      " M scripts/set_option_utils.py",
+      " M scripts/topological_sort.py",
+      " M scripts/user_activity_report.py",
+      " M scripts/verify_version_tags.py"
+    ],
+    "plausible": [],
+    "LeanSearchClient": [],
+    "importGraph": [],
+    "proofwidgets": [],
+    "aesop": [],
+    "Qq": [],
+    "batteries": [],
+    "Cli": []
+  },
+  "lean_checks_passed": true,
+  "full_manuscript_verification": true,
+  "coverage_review_matches_sources": true,
+  "coverage_review_sha256": "94ef6e8899eeb7d99454a0d7238f2ddb0b89f34cd283f680cdf4453eb4d0e509",
+  "coverage_scope": "Mathematical statements and proof calculations, relative to the explicit standard background results in ASSUMPTIONS.txt. Bibliography, history, editorial material, schematic figures and future research discussion are excluded.",
+  "coverage_explanation": "Mathematical coverage is a separate reviewed claim, relative to the explicit background inputs in ASSUMPTIONS.txt. The axiom audit does not discharge those hypotheses or establish manuscript correspondence. See COVERAGE.txt.",
+  "audited_theorems": 2043,
+  "audited_definitions": 966,
+  "modules": [
+    {
+      "file": "MagHK/AngularIntegral.lean",
+      "exit_code": 0,
+      "seconds": 0,
+      "reused_from": "2026-10-19T05:32:50.739621+00:00",
+      "olean_sha256": "50f39218d1d6e0dc3cd2ccf7b6f7570ad6fccac33aad223badf795201a7954db"
+    },
+    {
+      "file": "MagHK/Axial.lean",
+      "exit_code": 0,
+      "seconds": 0,
+      "reused_from": "2026-10-19T05:32:50.739621+00:00",
+      "olean_sha256": "ab851f7ccfb472f120dadb1dea6e4f276cdf20bb4b700d56ee51ddb0459280ed"
+    },
+    {
+      "file": "MagHK/Ordering.lean",
+      "exit_code": 0,
+      "seconds": 0,
+      "reused_from": "2026-10-19T05:32:50.739621+00:00",
+      "olean_sha256": "97d8bda0b3bc3247ae129a671ed827c7e500eae3818add6e32d86c931351f0b6"
+    },
+    {
+      "file": "MagHK/OperatorSpectrum.lean",
+      "exit_code": 0,
+      "seconds": 0,
+      "reused_from": "2026-10-19T05:32:50.739621+00:00",
+      "olean_sha256": "a50bedb60c91f3385be95b5bbfa67e5deb9d2dbcfce12e88ca227bc5f34903e2"
+    },
+    {
+      "file": "MagHK/AxialRealization.lean",
+      "exit_code": 0,
+      "seconds": 0,
+      "reused_from": "2026-10-19T05:32:50.739621+00:00",
+      "olean_sha256": "89de0c2b29d3f82f1d1487691493238347d8f5dcbe3382b9c13abaf292d24741"
+    },
+    {
+      "file": "MagHK/BanachDuality.lean",
+      "exit_code": 0,
+      "seconds": 0,
+      "reused_from": "2026-10-19T05:32:50.739621+00:00",
+      "olean_sha256": "a92871869a2011462f13992565aa40c76b2a1eeda828247a99fdef463fc4af12"
+    },
+    {
+      "file": "MagHK/Noninteracting.lean",
+      "exit_code": 0,
+      "seconds": 0,
+      "reused_from": "2026-10-19T05:32:50.739621+00:00",
+      "olean_sha256": "e57d2c30d014f13c9bfe8a9fdd45fd3d25840153290bf8fc3080dbc7c8440bf3"
+    },
+    {
+      "file": "MagHK/ParameterContinuity.lean",
+      "exit_code": 0,
+      "seconds": 0,
+      "reused_from": "2026-10-19T05:32:50.739621+00:00",
+      "olean_sha256": "4bc7c9efeacde916eec6d670fb451afc537ff66069f0cc8b383abaef0054590d"
+    },
+    {
+      "file": "MagHK/NormLimits.lean",
+      "exit_code": 0,
+      "seconds": 0,
+      "reused_from": "2026-10-19T05:32:50.739621+00:00",
+      "olean_sha256": "826b28af694350e695fc576fb0063b94c98b721b3cb45fbea6568b2a155c4474"
+    },
+    {
+      "file": "MagHK/NormContinuity.lean",
+      "exit_code": 0,
+      "seconds": 0,
+      "reused_from": "2026-10-19T05:32:50.739621+00:00",
+      "olean_sha256": "ccf1d81ed8d8ba6a6c20cbd9cf175e064c697ce694181e747205749abd38a0fb"
+    },
+    {
+      "file": "MagHK/Slater.lean",
+      "exit_code": 0,
+      "seconds": 0,
+      "reused_from": "2026-10-19T05:32:50.739621+00:00",
+      "olean_sha256": "00fd0b5dec3379e09234e0bbee781ae88e612589db5b1d6dd5e7b9c4f12330b6"
+    },
+    {
+      "file": "MagHK/CylindricalOrbitals.lean",
+      "exit_code": 0,
+      "seconds": 0,
+      "reused_from": "2026-10-19T05:32:50.739621+00:00",
+      "olean_sha256": "b56a40b602f6eae8b6553887d4e2c07672c25a865b3841dd6f3b6f78c8bc7437"
+    },
+    {
+      "file": "MagHK/RadialRealization.lean",
+      "exit_code": 0,
+      "seconds": 0,
+      "reused_from": "2026-10-19T05:32:50.739621+00:00",
+      "olean_sha256": "4bb023faebcce50287cbbb64f795b49c45054db5748d0b5aef375b50dab2e541"
+    },
+    {
+      "file": "MagHK/RadialEndpoints.lean",
+      "exit_code": 0,
+      "seconds": 0,
+      "reused_from": "2026-10-19T05:32:50.739621+00:00",
+      "olean_sha256": "2056dc18712f2bc404ebb3ccc067ee499a53af5854dd2e153489ed3981df4f9d"
+    },
+    {
+      "file": "MagHK/PotentialInfinity.lean",
+      "exit_code": 0,
+      "seconds": 0,
+      "reused_from": "2026-10-19T05:32:50.739621+00:00",
+      "olean_sha256": "663d0666d41592c35dd47dbd3feb3058b285c47a719f84e125dcebb2799a8df3"
+    },
+    {
+      "file": "MagHK/PartnerAsymptotics.lean",
+      "exit_code": 0,
+      "seconds": 0,
+      "reused_from": "2026-10-19T05:32:50.739621+00:00",
+      "olean_sha256": "2e86ad61c4c37400b5d04387714a57f6f928632df62c5b0e56d8ce5f154c73b3"
+    },
+    {
+      "file": "MagHK/SecondOrbital.lean",
+      "exit_code": 0,
+      "seconds": 0,
+      "reused_from": "2026-10-19T05:32:50.739621+00:00",
+      "olean_sha256": "bb2c6560f748cd0b337550a5e1be8a89418169af39fafe5f7d8e5292042e007c"
+    },
+    {
+      "file": "MagHK/OrbitalDomains.lean",
+      "exit_code": 0,
+      "seconds": 0,
+      "reused_from": "2026-10-19T05:32:50.739621+00:00",
+      "olean_sha256": "1478e8f9ff7118e454da7652fdd61761d86c0c8f87d69fcf741a9d2d7b44cdf6"
+    },
+    {
+      "file": "MagHK/BoundedRealization.lean",
+      "exit_code": 0,
+      "seconds": 0,
+      "reused_from": "2026-10-19T05:32:50.739621+00:00",
+      "olean_sha256": "d924dc6fbd0d057272a607670b8c2d54112bd5655abd601d4b4d3dd489248055"
+    },
+    {
+      "file": "MagHK/Cartesian.lean",
+      "exit_code": 0,
+      "seconds": 0,
+      "reused_from": "2026-10-19T05:32:50.739621+00:00",
+      "olean_sha256": "829e5f0aedb2d57bc342dd296d1fa27d6ca2fb0fec459053e28ef2c42ef82024"
+    },
+    {
+      "file": "MagHK/CartesianOrbitals.lean",
+      "exit_code": 0,
+      "seconds": 0,
+      "reused_from": "2026-10-19T05:32:50.739621+00:00",
+      "olean_sha256": "5c126054d26aa02e9dbf9dc4601a42c4814e8a16c47ddd79aebe4c6c28a4850b"
+    },
+    {
+      "file": "MagHK/Curvature.lean",
+      "exit_code": 0,
+      "seconds": 0,
+      "reused_from": "2026-10-19T05:32:50.739621+00:00",
+      "olean_sha256": "71e54dab403ead1013f6ef7e8d5169fe367b251ff99a4be619afecc3e371bec0"
+    },
+    {
+      "file": "MagHK/ConstructionData.lean",
+      "exit_code": 0,
+      "seconds": 0,
+      "reused_from": "2026-10-19T05:32:50.739621+00:00",
+      "olean_sha256": "927842d6fc9dd99cfd94f44ce5a223a9bfc76403eb86136789547c2adf58b9cb"
+    },
+    {
+      "file": "MagHK/ConcreteSlater.lean",
+      "exit_code": 0,
+      "seconds": 0,
+      "reused_from": "2026-10-19T05:32:50.739621+00:00",
+      "olean_sha256": "c38d19ecf9d9c7bcb066015b2c3cb7f78fe1ea455e67eff69cc3c049e77597ad"
+    },
+    {
+      "file": "MagHK/CoordinateLaplacian.lean",
+      "exit_code": 0,
+      "seconds": 0,
+      "reused_from": "2026-10-19T05:32:50.739621+00:00",
+      "olean_sha256": "85e0f4ff6c4091e0af02859668e5213389a77b4f2da1f7e0bb3ded73707c08f7"
+    },
+    {
+      "file": "MagHK/CoordinateMagnetic.lean",
+      "exit_code": 0,
+      "seconds": 0,
+      "reused_from": "2026-10-19T05:32:50.739621+00:00",
+      "olean_sha256": "7a150e4d2c677c8d2089c42a27e8cd0c41ae551e64592b1f97fc165096c4f73d"
+    },
+    {
+      "file": "MagHK/Monopole.lean",
+      "exit_code": 0,
+      "seconds": 0,
+      "reused_from": "2026-10-19T05:32:50.739621+00:00",
+      "olean_sha256": "b2afb8ded6362753ea45a584f53c0a70d428ae6dc5cca85d027fef77b8a0aa2b"
+    },
+    {
+      "file": "MagHK/Correlation.lean",
+      "exit_code": 0,
+      "seconds": 0,
+      "reused_from": "2026-10-19T05:32:50.739621+00:00",
+      "olean_sha256": "3f1b67d43a73bb598ef5728d6d61d6e54a7768f9c82eeaa8c13f9d666e62140f"
+    },
+    {
+      "file": "MagHK/PlanarSpectralLibrary.lean",
+      "exit_code": 0,
+      "seconds": 0,
+      "reused_from": "2026-10-19T05:32:50.739621+00:00",
+      "olean_sha256": "8b77ea64f5746b558e8c2f8a17fe3f90f14505e31ccfc091d922d11e48d47a65"
+    },
+    {
+      "file": "MagHK/TensorRealization.lean",
+      "exit_code": 0,
+      "seconds": 0,
+      "reused_from": "2026-10-19T05:32:50.739621+00:00",
+      "olean_sha256": "d878712d3d73f7647f78fcc16555f6e04d0031366f9de1d0ac721fdc5259aa8a"
+    },
+    {
+      "file": "MagHK/FermionRealization.lean",
+      "exit_code": 0,
+      "seconds": 0,
+      "reused_from": "2026-10-19T05:32:50.739621+00:00",
+      "olean_sha256": "f2f78c295835fec2d4d9e5c0ab89afb63eb02469870e53eea45f3451d5b68c44"
+    },
+    {
+      "file": "MagHK/TimeReversal.lean",
+      "exit_code": 0,
+      "seconds": 0,
+      "reused_from": "2026-10-19T05:32:50.739621+00:00",
+      "olean_sha256": "24e75429f8f71cdaa9c87bbcc43a9b426bdc7da2023419fdf2388467b56d1aa0"
+    },
+    {
+      "file": "MagHK/OperatorTimeReversal.lean",
+      "exit_code": 0,
+      "seconds": 0,
+      "reused_from": "2026-10-19T05:32:50.739621+00:00",
+      "olean_sha256": "14ac63c463ea785682b1e251fe708a41b1445d5c2e4d6b806564b8e2a2a965a2"
+    },
+    {
+      "file": "MagHK/GaussianNormalization.lean",
+      "exit_code": 0,
+      "seconds": 0,
+      "reused_from": "2026-10-19T05:32:50.739621+00:00",
+      "olean_sha256": "93e727a237c77eee398064c26e48307189d1f02a8ecbee2cf9de5daccb31e23d"
+    },
+    {
+      "file": "MagHK/GaussianIntegrals.lean",
+      "exit_code": 0,
+      "seconds": 0,
+      "reused_from": "2026-10-19T05:32:50.739621+00:00",
+      "olean_sha256": "d04bb38861774fa277209d875814ded80685544e11f35c758d761a5cdb96c22e"
+    },
+    {
+      "file": "MagHK/GaussianAxial.lean",
+      "exit_code": 0,
+      "seconds": 0,
+      "reused_from": "2026-10-19T05:32:50.739621+00:00",
+      "olean_sha256": "476d87af97154cdcc5441902d9f95dc5ea3016c3d2262440548fa75d41064d93"
+    },
+    {
+      "file": "MagHK/GaussianDomains.lean",
+      "exit_code": 0,
+      "seconds": 0,
+      "reused_from": "2026-10-19T05:32:50.739621+00:00",
+      "olean_sha256": "e00cedde1b09306436edbbb22fef214f4ab99e35471297481ebf0e3a33e15a45"
+    },
+    {
+      "file": "MagHK/GaussianRealization.lean",
+      "exit_code": 0,
+      "seconds": 0,
+      "reused_from": "2026-10-19T05:32:50.739621+00:00",
+      "olean_sha256": "4605d073a74ef69e4a8b6594cb558ffa672a0afd851cbb5baa8022887daad100"
+    },
+    {
+      "file": "MagHK/GaussianPlanar.lean",
+      "exit_code": 0,
+      "seconds": 0,
+      "reused_from": "2026-10-19T05:32:50.739621+00:00",
+      "olean_sha256": "336bd7a63f74e6cf11545caa9872d76e63d40f0e0b8d88b308132fc7f202e8cb"
+    },
+    {
+      "file": "MagHK/GaussianOrbitals.lean",
+      "exit_code": 0,
+      "seconds": 0,
+      "reused_from": "2026-10-19T05:32:50.739621+00:00",
+      "olean_sha256": "504f17d90c15d42c688008299c0394d4e5fe4c51b16b1cd05083c25532d83202"
+    },
+    {
+      "file": "MagHK/GaussianSlater.lean",
+      "exit_code": 0,
+      "seconds": 0,
+      "reused_from": "2026-10-19T05:32:50.739621+00:00",
+      "olean_sha256": "556caefd61ef1df8d90f9bbc1d5c8a65705c409e80783f4d9b57bbdffdc2b094"
+    },
+    {
+      "file": "MagHK/GaussianFermion.lean",
+      "exit_code": 0,
+      "seconds": 0,
+      "reused_from": "2026-10-19T05:32:50.739621+00:00",
+      "olean_sha256": "aa1e633416b5bab504c8c6de519a99486f98158d0cecc3d241281704ef259204"
+    },
+    {
+      "file": "MagHK/CounterexamplePair.lean",
+      "exit_code": 0,
+      "seconds": 0,
+      "reused_from": "2026-10-19T05:32:50.739621+00:00",
+      "olean_sha256": "e99929b3cd09c15bbf5f77cd535b6be0a6d6fbe72cf9eadab1019827340a016c"
+    },
+    {
+      "file": "MagHK/MonopoleOrbital.lean",
+      "exit_code": 0,
+      "seconds": 0,
+      "reused_from": "2026-10-19T05:32:50.739621+00:00",
+      "olean_sha256": "1a813bc1d103c98c667f3461c8f4dc133fb4d1237682103f07125e4c3e6a79a4"
+    },
+    {
+      "file": "MagHK/MonopoleTrial.lean",
+      "exit_code": 0,
+      "seconds": 0,
+      "reused_from": "2026-10-19T05:32:50.739621+00:00",
+      "olean_sha256": "c4fdb6a2f92a34ef2679cb3bbfcd64866b900f515c5891d24f8d541acfa49619"
+    },
+    {
+      "file": "MagHK/MonopoleHilbert.lean",
+      "exit_code": 0,
+      "seconds": 0,
+      "reused_from": "2026-10-19T05:32:50.739621+00:00",
+      "olean_sha256": "cc68efb8cb48c0b6b2aefbefd4bcd3303482a099fab5fb2b5c2ec327edcc6a31"
+    },
+    {
+      "file": "MagHK/MonopoleRadial.lean",
+      "exit_code": 0,
+      "seconds": 0,
+      "reused_from": "2026-10-19T05:32:50.739621+00:00",
+      "olean_sha256": "9abdc19e167b2ab891f170efc4796529a30b09e6d9470ebc117be9584ea28796"
+    },
+    {
+      "file": "MagHK/MonopoleRadialDomain.lean",
+      "exit_code": 0,
+      "seconds": 0,
+      "reused_from": "2026-10-19T05:32:50.739621+00:00",
+      "olean_sha256": "4c3d4088283e3a0e7005df00ceb5d437a0f432a0d4d9f611c99e72038120c702"
+    },
+    {
+      "file": "MagHK/MonopoleAngular.lean",
+      "exit_code": 0,
+      "seconds": 0,
+      "reused_from": "2026-10-19T05:32:50.739621+00:00",
+      "olean_sha256": "b140ee1fb0def25e8db19246b80cfdcbd996e5b63a2d0d5ac28aa02d61c4996e"
+    },
+    {
+      "file": "MagHK/OperatorCompactness.lean",
+      "exit_code": 0,
+      "seconds": 0,
+      "reused_from": "2026-10-19T05:32:50.739621+00:00",
+      "olean_sha256": "0d51fede21ca93b07fcc4ca3ba0d7a35ae40e863a911646476208995f1f96800"
+    },
+    {
+      "file": "MagHK/MonopoleRealization.lean",
+      "exit_code": 0,
+      "seconds": 0,
+      "reused_from": "2026-10-19T05:32:50.739621+00:00",
+      "olean_sha256": "a3176ce0064973913f2dc2df11647f962fbca66392dfd1182c2458eaa697786e"
+    },
+    {
+      "file": "MagHK/ManyBodyTimeReversal.lean",
+      "exit_code": 0,
+      "seconds": 0,
+      "reused_from": "2026-10-19T05:32:50.739621+00:00",
+      "olean_sha256": "1f83d39dfe2f20c32578d9a288d0fcfcd096e22b22ec3e55c5aa71548d0bc879"
+    },
+    {
+      "file": "MagHK/GeneralGauge.lean",
+      "exit_code": 0,
+      "seconds": 0,
+      "reused_from": "2026-10-19T05:32:50.739621+00:00",
+      "olean_sha256": "f8accbdf8517bf5cb89e4a7e61c3456082313db9347a4e860a6a0caf38da754a"
+    },
+    {
+      "file": "MagHK/GeneralGaugeWeak.lean",
+      "exit_code": 0,
+      "seconds": 0,
+      "reused_from": "2026-10-19T05:32:50.739621+00:00",
+      "olean_sha256": "53cb68613ca2e6c816e09d0508a2c35e3d496dab52098701ee5125af3c3524d1"
+    },
+    {
+      "file": "MagHK/GaussianCompactness.lean",
+      "exit_code": 0,
+      "seconds": 0,
+      "reused_from": "2026-10-19T05:32:50.739621+00:00",
+      "olean_sha256": "0777cb6639479a3f90825ea8dd6ab1959a10d24e5e1a06888fad8b4bd6c37eaa"
+    },
+    {
+      "file": "MagHK/PotentialSpaces.lean",
+      "exit_code": 0,
+      "seconds": 0,
+      "reused_from": "2026-10-19T05:32:50.739621+00:00",
+      "olean_sha256": "03f1b761d1daf53e7db67814e83e88bd57eb1ba5989d431f5b3a4cff04864502"
+    },
+    {
+      "file": "MagHK/GaussianOutside.lean",
+      "exit_code": 0,
+      "seconds": 0,
+      "reused_from": "2026-10-19T05:32:50.739621+00:00",
+      "olean_sha256": "aed1aac8adb90d90700d2d07470da7b43dd0884ce7630e514eb15daa8cc558da"
+    },
+    {
+      "file": "MagHK/Symmetry.lean",
+      "exit_code": 0,
+      "seconds": 0,
+      "reused_from": "2026-10-19T05:32:50.739621+00:00",
+      "olean_sha256": "0c16a1c9c5e21d6fe5c3f533edb873825b4e14eb9c4cc1f0669ac4dc37b48d01"
+    },
+    {
+      "file": "MagHK/SpinGroup.lean",
+      "exit_code": 0,
+      "seconds": 0,
+      "reused_from": "2026-10-19T05:32:50.739621+00:00",
+      "olean_sha256": "9746b708b4b7bf5ce4b03829188f85683f861f15d4c38e3b518f86f5ccb5c473"
+    },
+    {
+      "file": "MagHK/MonopoleGeometry.lean",
+      "exit_code": 0,
+      "seconds": 0,
+      "reused_from": "2026-10-19T05:32:50.739621+00:00",
+      "olean_sha256": "27ad07d520601dee425ecc10cef8919adb3ad797c7f0cf12289398243bdadd2b"
+    },
+    {
+      "file": "MagHK/SpinChart.lean",
+      "exit_code": 0,
+      "seconds": 0,
+      "reused_from": "2026-10-19T05:32:50.739621+00:00",
+      "olean_sha256": "2db104b160a1971f55bc420f1ce4d14399b4dd42a6b67334ba5a1e26bbc2f442"
+    },
+    {
+      "file": "MagHK/MonopoleSphere.lean",
+      "exit_code": 0,
+      "seconds": 0,
+      "reused_from": "2026-10-19T05:32:50.739621+00:00",
+      "olean_sha256": "1fc6d98cfe9761deb3e4c33989d02e71c51d4c15dac0b192648d600983cfeef7"
+    },
+    {
+      "file": "MagHK/MonopoleQuadrature.lean",
+      "exit_code": 0,
+      "seconds": 0,
+      "reused_from": "2026-10-19T05:32:50.739621+00:00",
+      "olean_sha256": "cd4a88dbc015794f569b1f5b7bd20302fe012640518f3a92f2524231a34346b3"
+    },
+    {
+      "file": "MagHK/MonopolePairLaw.lean",
+      "exit_code": 0,
+      "seconds": 0,
+      "reused_from": "2026-10-19T05:32:50.739621+00:00",
+      "olean_sha256": "6eee83fd2fedac246d43a7cc9058118c04fc5207a0a2a84f98315304ca53e1ee"
+    },
+    {
+      "file": "MagHK/SpinGeometry.lean",
+      "exit_code": 0,
+      "seconds": 0,
+      "reused_from": "2026-10-19T05:32:50.739621+00:00",
+      "olean_sha256": "56fc723258c380d2db5edf768cae95bc2ad63702e154d0d01283a9ffbbac7d18"
+    },
+    {
+      "file": "MagHK/MonopoleFlux.lean",
+      "exit_code": 0,
+      "seconds": 0,
+      "reused_from": "2026-10-19T05:32:50.739621+00:00",
+      "olean_sha256": "056bfaeca1f3abbb774e04898844f041a7af834d9b5eba269ea58f21b6d455ca"
+    },
+    {
+      "file": "MagHK/WeakGauge.lean",
+      "exit_code": 0,
+      "seconds": 0,
+      "reused_from": "2026-10-19T05:32:50.739621+00:00",
+      "olean_sha256": "a617ce97e59f22bdc1300340241482d6a0ab62f4ff22df53c74327737ed479d7"
+    },
+    {
+      "file": "MagHK/NoninteractingTheorem.lean",
+      "exit_code": 0,
+      "seconds": 0,
+      "reused_from": "2026-10-19T05:32:50.739621+00:00",
+      "olean_sha256": "ea3f3298af20c035470c4ead28e1b5fc6678ad0617c34bec9eebeb30170fdda9"
+    },
+    {
+      "file": "MagHK/CurrentCompletion.lean",
+      "exit_code": 0,
+      "seconds": 0,
+      "reused_from": "2026-10-19T05:32:50.739621+00:00",
+      "olean_sha256": "151d29f72ba4366dd20e7a86c1d7c4ae928357f58a63bcf7c13009247d0e2358"
+    },
+    {
+      "file": "MagHK/DiracString.lean",
+      "exit_code": 0,
+      "seconds": 0,
+      "reused_from": "2026-10-19T05:32:50.739621+00:00",
+      "olean_sha256": "b1e06a2e3c68cfcf3570336178a6a0c6307b45894abad1b5e3fa277a49fcdc20"
+    },
+    {
+      "file": "MagHK/MonopoleMultiplet.lean",
+      "exit_code": 0,
+      "seconds": 0,
+      "reused_from": "2026-10-19T05:32:50.739621+00:00",
+      "olean_sha256": "5dc4ec5acd8150814bf084189bad1dd44b31a25d1bb62b00077d80a8b50e83ae"
+    },
+    {
+      "file": "MagHK/SeparatedDifferential.lean",
+      "exit_code": 0,
+      "seconds": 0,
+      "reused_from": "2026-10-19T05:32:50.739621+00:00",
+      "olean_sha256": "5a701ed413755698e809e8c75970b6a8a273e13dd142b29f26ce3e8f26f64091"
+    },
+    {
+      "file": "MagHK/DoubletDeterminant.lean",
+      "exit_code": 0,
+      "seconds": 0,
+      "reused_from": "2026-10-19T05:32:50.739621+00:00",
+      "olean_sha256": "06bffcb6e27bc47208ec1044c809d2859d7f16aa86c30f4c8477f0a52eeb5568"
+    },
+    {
+      "file": "MagHK/ExpPolynomialMoments.lean",
+      "exit_code": 0,
+      "seconds": 0,
+      "reused_from": "2026-10-19T05:32:50.739621+00:00",
+      "olean_sha256": "90603abb01868212dc01805bd954d2377477630c5befa035ad16ab18af2bde63"
+    },
+    {
+      "file": "MagHK/FunctionSpaces.lean",
+      "exit_code": 0,
+      "seconds": 0,
+      "reused_from": "2026-10-19T05:32:50.739621+00:00",
+      "olean_sha256": "5d28030543ec98ad9362659dc6adb4f4c1720df7ff568d41e52cd80b07249ccf"
+    },
+    {
+      "file": "MagHK/GaussianGap.lean",
+      "exit_code": 0,
+      "seconds": 0,
+      "reused_from": "2026-10-19T05:32:50.739621+00:00",
+      "olean_sha256": "9fa0aac1fbe2c03f348b816bb92f48e09cabb2c049a075f6e97df2028d12d8a6"
+    },
+    {
+      "file": "MagHK/GaussianParameterBounds.lean",
+      "exit_code": 0,
+      "seconds": 0,
+      "reused_from": "2026-10-19T05:32:50.739621+00:00",
+      "olean_sha256": "edccd6c7876eb9aa4baaf69043346050082808366e63c649c34607d47e6e1471"
+    },
+    {
+      "file": "MagHK/GeneralGaugeShift.lean",
+      "exit_code": 0,
+      "seconds": 0,
+      "reused_from": "2026-10-19T05:32:50.739621+00:00",
+      "olean_sha256": "84e1dd7335f5cf5dfeee5b3e03fb6a51d218b551043436c8dd57cc5b0451f3a8"
+    },
+    {
+      "file": "MagHK/MagneticForms.lean",
+      "exit_code": 0,
+      "seconds": 0,
+      "reused_from": "2026-10-19T05:32:50.739621+00:00",
+      "olean_sha256": "035e6ac2644e129ead161d9b11e3f10ec8829e5cd2d72f85dff51c9c6b1c2ac4"
+    },
+    {
+      "file": "MagHK/ManyBodyDensity.lean",
+      "exit_code": 0,
+      "seconds": 0,
+      "reused_from": "2026-10-19T05:32:50.739621+00:00",
+      "olean_sha256": "b0cc64247d8307b4564876e41479b6c1ca0259005412361ac1eb9742a53771d2"
+    },
+    {
+      "file": "MagHK/Poincare.lean",
+      "exit_code": 0,
+      "seconds": 0,
+      "reused_from": "2026-10-19T05:32:50.739621+00:00",
+      "olean_sha256": "152663a85617b51e4311ea99445408af0e7bd4b3695c3cbb508b75e7670a5f1c"
+    },
+    {
+      "file": "MagHK/WeakDifferential.lean",
+      "exit_code": 0,
+      "seconds": 0,
+      "reused_from": "2026-10-19T05:32:50.739621+00:00",
+      "olean_sha256": "e684fe9e838f4a11fceeac7e0934277dbdb7b20b08a9af7cd8e507d84f16b266"
+    },
+    {
+      "file": "MagHK/MarginalSpaces.lean",
+      "exit_code": 0,
+      "seconds": 0,
+      "reused_from": "2026-10-19T05:32:50.739621+00:00",
+      "olean_sha256": "18f10cf4aecd0f331c98ae7f04d11b7dd74c82a0cf052e0b7d56af925a2f71f1"
+    },
+    {
+      "file": "MagHK/MonopolePatches.lean",
+      "exit_code": 0,
+      "seconds": 0,
+      "reused_from": "2026-10-19T05:32:50.739621+00:00",
+      "olean_sha256": "1b7ca95e11c88e5b4c5192947cdbb1ac2b748932aae30cc22fbc702eac087002"
+    },
+    {
+      "file": "MagHK/MonopolePatchGauge.lean",
+      "exit_code": 0,
+      "seconds": 0,
+      "reused_from": "2026-10-19T05:32:50.739621+00:00",
+      "olean_sha256": "4dab911dbcb12bf3235093fe64f98db837468d304284924e8d17834d02637890"
+    },
+    {
+      "file": "MagHK/MonopoleCartesianDifferential.lean",
+      "exit_code": 0,
+      "seconds": 0,
+      "reused_from": "2026-10-19T05:32:50.739621+00:00",
+      "olean_sha256": "6af6afaa2524645473e0ce757d55c34a6087454ecf2aee771b34da8977f69318"
+    },
+    {
+      "file": "MagHK/MonopoleDifferential.lean",
+      "exit_code": 0,
+      "seconds": 0,
+      "reused_from": "2026-10-19T05:32:50.739621+00:00",
+      "olean_sha256": "bf3af12b622e748c787d44c47d46108778ce892c5d686ed4f725a3e8046152ca"
+    },
+    {
+      "file": "MagHK/MonopoleCartesianOperator.lean",
+      "exit_code": 0,
+      "seconds": 0,
+      "reused_from": "2026-10-19T05:32:50.739621+00:00",
+      "olean_sha256": "93b66492d74506e37c980e8a240edc41f62d8ed0baa06c47c414ae5d24c328a3"
+    },
+    {
+      "file": "MagHK/MonopoleCoordinates.lean",
+      "exit_code": 0,
+      "seconds": 0,
+      "reused_from": "2026-10-19T05:32:50.739621+00:00",
+      "olean_sha256": "77fd043523475f4317e8c3f383667fe9b7b8e46e61b780dd01d56700c21f4c8d"
+    },
+    {
+      "file": "MagHK/MonopoleTensorDomain.lean",
+      "exit_code": 0,
+      "seconds": 0,
+      "reused_from": "2026-10-19T05:32:50.739621+00:00",
+      "olean_sha256": "e0ef5e7b398d8d894717bf5f94a117b0da290be1f9bb1aae73917cf064a1bdc0"
+    },
+    {
+      "file": "MagHK/MonopoleObstruction.lean",
+      "exit_code": 0,
+      "seconds": 0,
+      "reused_from": "2026-10-19T05:32:50.739621+00:00",
+      "olean_sha256": "ded2b6ff9d71b641cec2baa78e53e223cf32f0f704db201d046b8d18dbab1eac"
+    },
+    {
+      "file": "MagHK/MonopoleExpectation.lean",
+      "exit_code": 0,
+      "seconds": 0,
+      "reused_from": "2026-10-19T05:32:50.739621+00:00",
+      "olean_sha256": "5e71d885a8ce9f2bda2268967786c837d246e24c26f0cf32f0878f6854cfa1e2"
+    },
+    {
+      "file": "MagHK/MonopoleCorrelation.lean",
+      "exit_code": 0,
+      "seconds": 0,
+      "reused_from": "2026-10-19T05:32:50.739621+00:00",
+      "olean_sha256": "fd1331533ab8a852924a50c2b77f62069ca7b3d3f828e64b31aa5690cf8dbce0"
+    },
+    {
+      "file": "MagHK/MonopoleGround.lean",
+      "exit_code": 0,
+      "seconds": 0,
+      "reused_from": "2026-10-19T05:32:50.739621+00:00",
+      "olean_sha256": "82c9a4aeb178d167db1bbda66a4bc8499dc31a2c89d22224c457c2ce167e5319"
+    },
+    {
+      "file": "MagHK/MonopoleOccupied.lean",
+      "exit_code": 0,
+      "seconds": 0,
+      "reused_from": "2026-10-19T05:32:50.739621+00:00",
+      "olean_sha256": "184859de4c61826681a87c73022dfe470455b3d5ea0baa6724d6f3a97cfd4f12"
+    },
+    {
+      "file": "MagHK/MonopoleNonSlater.lean",
+      "exit_code": 0,
+      "seconds": 0,
+      "reused_from": "2026-10-19T05:32:50.739621+00:00",
+      "olean_sha256": "24de154ba52bd316d48927120c296ef8bc30890ee0b3684a7290cd2d3c1a39a5"
+    },
+    {
+      "file": "MagHK/MonopoleCurrent.lean",
+      "exit_code": 0,
+      "seconds": 0,
+      "reused_from": "2026-10-19T05:32:50.739621+00:00",
+      "olean_sha256": "7598daac9a66e52a061de50ff18bef8f44c0056d2b97dbf9c8cfa1fda49645d4"
+    },
+    {
+      "file": "MagHK/MonopoleCovariance.lean",
+      "exit_code": 0,
+      "seconds": 0,
+      "reused_from": "2026-10-19T05:32:50.739621+00:00",
+      "olean_sha256": "a12a15099a8c3099003499b15d081a6e37ed7830689e36f8e0d55a8266bdc646"
+    },
+    {
+      "file": "MagHK/MonopoleFormCovariance.lean",
+      "exit_code": 0,
+      "seconds": 0,
+      "reused_from": "2026-10-19T05:32:50.739621+00:00",
+      "olean_sha256": "30c16ef9b720513bb73d3156b75fe8cf5e7fc48fabeb81c4affba47f066ada72"
+    },
+    {
+      "file": "MagHK/MonopoleSinglet.lean",
+      "exit_code": 0,
+      "seconds": 0,
+      "reused_from": "2026-10-19T05:32:50.739621+00:00",
+      "olean_sha256": "ef5a9455a1fb56cbfb5e2adb74c91ba1e5fa38982416b3eb3c6361704c099457"
+    },
+    {
+      "file": "MagHK/MonopoleRayleigh.lean",
+      "exit_code": 0,
+      "seconds": 0,
+      "reused_from": "2026-10-19T05:32:50.739621+00:00",
+      "olean_sha256": "53919674d3d07a38438af8c2f5e516a0723ed9b133418e010286d0f80f6a2d5a"
+    },
+    {
+      "file": "MagHK/MonopoleRotationPotential.lean",
+      "exit_code": 0,
+      "seconds": 0,
+      "reused_from": "2026-10-19T05:32:50.739621+00:00",
+      "olean_sha256": "f3a64bc02d33a658deca5635e5d7978a16f8ed054c05c2c67e889d9897f020d7"
+    },
+    {
+      "file": "MagHK/MonopolePositive.lean",
+      "exit_code": 0,
+      "seconds": 0,
+      "reused_from": "2026-10-19T05:32:50.739621+00:00",
+      "olean_sha256": "d42ce0b1cea26986b9e5184bd38e1a188b4fbe478251e00d7bfa43007baf7112"
+    },
+    {
+      "file": "MagHK/MonopoleTimeReversal.lean",
+      "exit_code": 0,
+      "seconds": 0,
+      "reused_from": "2026-10-19T05:32:50.739621+00:00",
+      "olean_sha256": "8e7c7830555b7c9640dc0362b247a7ef9bb7d519c5e087019ef37769732ac05d"
+    },
+    {
+      "file": "MagHK/MonopoleInverse.lean",
+      "exit_code": 0,
+      "seconds": 0,
+      "reused_from": "2026-10-19T05:32:50.739621+00:00",
+      "olean_sha256": "27286035f7dc9e82eb7cbd76aef2f692e434666c2f344ed5a8c4661cf7d85710"
+    },
+    {
+      "file": "MagHK/MonopoleCurrentAveraging.lean",
+      "exit_code": 0,
+      "seconds": 0,
+      "reused_from": "2026-10-19T05:32:50.739621+00:00",
+      "olean_sha256": "9b9178caa308dbc0c25ea566b2b06be06fe5981e1329b04dbaf47af8249adece"
+    },
+    {
+      "file": "MagHK/MonopoleStationarity.lean",
+      "exit_code": 0,
+      "seconds": 0,
+      "reused_from": "2026-10-19T05:32:50.739621+00:00",
+      "olean_sha256": "183b0e9b834572523e199b0acc193094c92b45538372dd3a29720932d516b067"
+    },
+    {
+      "file": "MagHK/MonopoleCurrentTest.lean",
+      "exit_code": 0,
+      "seconds": 0,
+      "reused_from": "2026-10-19T05:32:50.739621+00:00",
+      "olean_sha256": "accb2656ef89b035f70eaf9e58b6fad5cc3d98364cb96fea593110eafe72f587"
+    },
+    {
+      "file": "MagHK/RadialCurrent.lean",
+      "exit_code": 0,
+      "seconds": 0,
+      "reused_from": "2026-10-19T05:32:50.739621+00:00",
+      "olean_sha256": "2c676a26c9f879d3e4db0c4e398170c012fdf01df9477d4ceff40cc7cee14c09"
+    },
+    {
+      "file": "MagHK/MonopoleCurrentZero.lean",
+      "exit_code": 0,
+      "seconds": 0,
+      "reused_from": "2026-10-19T05:32:50.739621+00:00",
+      "olean_sha256": "165e1b9f7dd59e971ee8079efe3af61d8f7f67592d008875f88279ab5a083120"
+    },
+    {
+      "file": "MagHK/MonopoleFlow.lean",
+      "exit_code": 0,
+      "seconds": 0,
+      "reused_from": "2026-10-19T05:32:50.739621+00:00",
+      "olean_sha256": "f46629647bf35c2bbea048066c144fda5150c7c94b29377edbfd437a06107b97"
+    },
+    {
+      "file": "MagHK/MonopoleWeakFlux.lean",
+      "exit_code": 0,
+      "seconds": 0,
+      "reused_from": "2026-10-19T05:32:50.739621+00:00",
+      "olean_sha256": "065c8699fa2867e11c9aec6e7001c9a6e034d8c49cb947bd39e171c41424d49d"
+    },
+    {
+      "file": "MagHK/MonopoleCurrentConclusion.lean",
+      "exit_code": 0,
+      "seconds": 0,
+      "reused_from": "2026-10-19T05:32:50.739621+00:00",
+      "olean_sha256": "caee819c8c7028c93b448954462678a9e0472fb8a1728006633f0ec837870888"
+    },
+    {
+      "file": "MagHK/MonopoleCounterexample.lean",
+      "exit_code": 0,
+      "seconds": 0,
+      "reused_from": "2026-10-19T05:32:50.739621+00:00",
+      "olean_sha256": "31d86b9c2fb60ad87c9ae5a915a6ea83a2e1c325df6afacfbdb50dbaa8d8e5d9"
+    },
+    {
+      "file": "MagHK/MonopoleCurrentBound.lean",
+      "exit_code": 0,
+      "seconds": 0,
+      "reused_from": "2026-10-19T05:32:50.739621+00:00",
+      "olean_sha256": "dbb15b133f9869e6fe896559d3754dc1237c927b0066f1f5bb13c671a8298150"
+    },
+    {
+      "file": "MagHK/MonopoleDensity.lean",
+      "exit_code": 0,
+      "seconds": 0,
+      "reused_from": "2026-10-19T05:32:50.739621+00:00",
+      "olean_sha256": "c10d27db9c34fa1c07ae6a68f7c24e72176e592ffce166e8ae7f0a5070b5828d"
+    },
+    {
+      "file": "MagHK/MonopoleEndpointDomains.lean",
+      "exit_code": 0,
+      "seconds": 0,
+      "reused_from": "2026-10-19T05:32:50.739621+00:00",
+      "olean_sha256": "8ed90c706359706b3f76ab6217c018ded702e4f5b1fc94e6f13159d572b75ada"
+    },
+    {
+      "file": "MagHK/MonopoleEndpointAsymptotics.lean",
+      "exit_code": 0,
+      "seconds": 0,
+      "reused_from": "2026-10-19T05:32:50.739621+00:00",
+      "olean_sha256": "b448f42e77894295079d38f85c160e8768e747ca348de1a121bb512492d602a6"
+    },
+    {
+      "file": "MagHK/MonopoleGlobalPotential.lean",
+      "exit_code": 0,
+      "seconds": 0,
+      "reused_from": "2026-10-19T05:32:50.739621+00:00",
+      "olean_sha256": "93623cb1556608370d635ce3ca7b391c16868c262500b0791083a04db7728526"
+    },
+    {
+      "file": "MagHK/MonopoleHardy.lean",
+      "exit_code": 0,
+      "seconds": 0,
+      "reused_from": "2026-10-19T05:32:50.739621+00:00",
+      "olean_sha256": "ebd4a8fd1352b4cced64b86f88ac1fa4fcb021dc7f863afe0de7397e5b78cb09"
+    },
+    {
+      "file": "MagHK/MonopoleTransition.lean",
+      "exit_code": 0,
+      "seconds": 0,
+      "reused_from": "2026-10-19T05:32:50.739621+00:00",
+      "olean_sha256": "e1b308368368a038c41f75c0a951ca2004edb74a6b84528fa1aa1bb63cb6a38a"
+    },
+    {
+      "file": "MagHK/MonopolePairTransition.lean",
+      "exit_code": 0,
+      "seconds": 0,
+      "reused_from": "2026-10-19T05:32:50.739621+00:00",
+      "olean_sha256": "4605a3084d054faac48a8784f6d084f0a19de9498aeef1b819084d75ccc92d20"
+    },
+    {
+      "file": "MagHK/MonopoleParamagnetic.lean",
+      "exit_code": 0,
+      "seconds": 0,
+      "reused_from": "2026-10-19T05:32:50.739621+00:00",
+      "olean_sha256": "74c9e3ad5bcc5fdb08336947c7fce340c263176ad5de38103b93e01c4b8e025c"
+    },
+    {
+      "file": "MagHK/MonopoleRadialIsometry.lean",
+      "exit_code": 0,
+      "seconds": 0,
+      "reused_from": "2026-10-19T05:32:50.739621+00:00",
+      "olean_sha256": "0f9c3d0131c96c495bd697f3974d01c10a007cfef78e5b875ee0727067b8c8cf"
+    },
+    {
+      "file": "MagHK/MonopoleRadiality.lean",
+      "exit_code": 0,
+      "seconds": 0,
+      "reused_from": "2026-10-19T05:32:50.739621+00:00",
+      "olean_sha256": "a5ef118868fd786ea3d0630a542e1cf062d8772c00acb47232ada9532d6d4d72"
+    },
+    {
+      "file": "MagHK/MonopoleSubmission.lean",
+      "exit_code": 0,
+      "seconds": 0,
+      "reused_from": "2026-10-19T05:32:50.739621+00:00",
+      "olean_sha256": "87d4542c3d84311c846ac69f2ea0faa7286163108b7984194dab35e15f249ee7"
+    },
+    {
+      "file": "MagHK/OneParticle.lean",
+      "exit_code": 0,
+      "seconds": 0,
+      "reused_from": "2026-10-19T05:32:50.739621+00:00",
+      "olean_sha256": "af91defdf5682f49b7a269fe0ce118638286654e24a281d714f9a54178440a11"
+    },
+    {
+      "file": "MagHK/OneParticleWeak.lean",
+      "exit_code": 0,
+      "seconds": 0,
+      "reused_from": "2026-10-19T05:32:50.739621+00:00",
+      "olean_sha256": "aacebd60a391d09987d34791e8db528f925d5fe53f6c75715f4cbe29893c5da0"
+    },
+    {
+      "file": "MagHK/OneParticleCurl.lean",
+      "exit_code": 0,
+      "seconds": 0,
+      "reused_from": "2026-10-19T05:32:50.739621+00:00",
+      "olean_sha256": "b8aa9a085af5804c33ea35ecd69e380f4bd52938f9e8b2ddfa9d405ac6fa94b5"
+    },
+    {
+      "file": "MagHK/OneParticleTheorem.lean",
+      "exit_code": 0,
+      "seconds": 0,
+      "reused_from": "2026-10-19T05:32:50.739621+00:00",
+      "olean_sha256": "90905f1b56b526d3f1063e3f50a94b02602483a5b0723535910c66506afb4409"
+    },
+    {
+      "file": "MagHK/OneParticleContinuity.lean",
+      "exit_code": 0,
+      "seconds": 0,
+      "reused_from": "2026-10-19T05:32:50.739621+00:00",
+      "olean_sha256": "272a437799f68392bbe5998f29098ac17bb446ca3a65b28c24a56197dd25690f"
+    },
+    {
+      "file": "MagHK/OperatorPreliminaries.lean",
+      "exit_code": 0,
+      "seconds": 0,
+      "reused_from": "2026-10-19T05:32:50.739621+00:00",
+      "olean_sha256": "f63763e67a3beb132ffdef2c30c8b30e7412ddbfd60261da0c3f015dcb02bbb6"
+    },
+    {
+      "file": "MagHK/OrderingTheorem.lean",
+      "exit_code": 0,
+      "seconds": 0,
+      "reused_from": "2026-10-19T05:32:50.739621+00:00",
+      "olean_sha256": "90ae02ca3175b2302a0f0249d749ed0089dd5fe5d268bcb45eab6f0813e6399c"
+    },
+    {
+      "file": "MagHK/ParamagneticDiscussion.lean",
+      "exit_code": 0,
+      "seconds": 0,
+      "reused_from": "2026-10-19T05:32:50.739621+00:00",
+      "olean_sha256": "ac5f29026ed5166e2b3ac45ea6862422e70e706cbd87eb82ed35f418b85ef0aa"
+    },
+    {
+      "file": "MagHK/PassiveSpin.lean",
+      "exit_code": 0,
+      "seconds": 0,
+      "reused_from": "2026-10-19T05:32:50.739621+00:00",
+      "olean_sha256": "900fa838430182c50a5b9d001a1b6adebaa92d14bdc5db185d8b8e63292975a5"
+    },
+    {
+      "file": "MagHK/PassiveSpinCounterexample.lean",
+      "exit_code": 0,
+      "seconds": 96.045,
+      "olean_sha256": "dd975b815beaf0dfd6e2dbd6cda499dd7768566e4e932c980d4599d235a9b780"
+    },
+    {
+      "file": "MagHK/PlanarEndpointAsymptotics.lean",
+      "exit_code": 0,
+      "seconds": 0,
+      "reused_from": "2026-10-19T05:32:50.739621+00:00",
+      "olean_sha256": "681d59ec2dbcf91bea50f73bd5dded447388dd4f1acaeac6c96d9f8f19324407"
+    },
+    {
+      "file": "MagHK/PotentialAsymptotics.lean",
+      "exit_code": 0,
+      "seconds": 0,
+      "reused_from": "2026-10-19T05:32:50.739621+00:00",
+      "olean_sha256": "ac9ce27a91a7e40721b850d91e8e69ecb4b222194395fc7186c366ccbd437af6"
+    },
+    {
+      "file": "MagHK/PotentialSpaceIdentification.lean",
+      "exit_code": 0,
+      "seconds": 0,
+      "reused_from": "2026-10-19T05:32:50.739621+00:00",
+      "olean_sha256": "8d481e1fe4c613b40ca0486f70df3888efc949c96b70e8913a1d3ed8b8c8b504"
+    },
+    {
+      "file": "MagHK.lean",
+      "exit_code": 0,
+      "seconds": 81.025,
+      "olean_sha256": "e8a1da5da5c7b4fefead398460ec8bfd296b0d46f5aa578923ba8613b5434232"
+    },
+    {
+      "file": "Audit.lean",
+      "exit_code": 0,
+      "seconds": 160.751,
+      "olean_sha256": "876bb32c9b70d351332891eaba261633a743c25d493c55392efb92897dc4fa11"
+    }
+  ],
+  "audited_imported_modules": [
+    "MagHK",
+    "MagHK.AngularIntegral",
+    "MagHK.Axial",
+    "MagHK.AxialRealization",
+    "MagHK.BanachDuality",
+    "MagHK.BoundedRealization",
+    "MagHK.Cartesian",
+    "MagHK.CartesianOrbitals",
+    "MagHK.ConcreteSlater",
+    "MagHK.ConstructionData",
+    "MagHK.CoordinateLaplacian",
+    "MagHK.CoordinateMagnetic",
+    "MagHK.Correlation",
+    "MagHK.CounterexamplePair",
+    "MagHK.CurrentCompletion",
+    "MagHK.Curvature",
+    "MagHK.CylindricalOrbitals",
+    "MagHK.DiracString",
+    "MagHK.DoubletDeterminant",
+    "MagHK.ExpPolynomialMoments",
+    "MagHK.FermionRealization",
+    "MagHK.FunctionSpaces",
+    "MagHK.GaussianAxial",
+    "MagHK.GaussianCompactness",
+    "MagHK.GaussianDomains",
+    "MagHK.GaussianFermion",
+    "MagHK.GaussianGap",
+    "MagHK.GaussianIntegrals",
+    "MagHK.GaussianNormalization",
+    "MagHK.GaussianOrbitals",
+    "MagHK.GaussianOutside",
+    "MagHK.GaussianParameterBounds",
+    "MagHK.GaussianPlanar",
+    "MagHK.GaussianRealization",
+    "MagHK.GaussianSlater",
+    "MagHK.GeneralGauge",
+    "MagHK.GeneralGaugeShift",
+    "MagHK.GeneralGaugeWeak",
+    "MagHK.MagneticForms",
+    "MagHK.ManyBodyDensity",
+    "MagHK.ManyBodyTimeReversal",
+    "MagHK.MarginalSpaces",
+    "MagHK.Monopole",
+    "MagHK.MonopoleAngular",
+    "MagHK.MonopoleCartesianDifferential",
+    "MagHK.MonopoleCartesianOperator",
+    "MagHK.MonopoleCoordinates",
+    "MagHK.MonopoleCorrelation",
+    "MagHK.MonopoleCounterexample",
+    "MagHK.MonopoleCovariance",
+    "MagHK.MonopoleCurrent",
+    "MagHK.MonopoleCurrentAveraging",
+    "MagHK.MonopoleCurrentBound",
+    "MagHK.MonopoleCurrentConclusion",
+    "MagHK.MonopoleCurrentTest",
+    "MagHK.MonopoleCurrentZero",
+    "MagHK.MonopoleDensity",
+    "MagHK.MonopoleDifferential",
+    "MagHK.MonopoleEndpointAsymptotics",
+    "MagHK.MonopoleEndpointDomains",
+    "MagHK.MonopoleExpectation",
+    "MagHK.MonopoleFlow",
+    "MagHK.MonopoleFlux",
+    "MagHK.MonopoleFormCovariance",
+    "MagHK.MonopoleGeometry",
+    "MagHK.MonopoleGlobalPotential",
+    "MagHK.MonopoleGround",
+    "MagHK.MonopoleHardy",
+    "MagHK.MonopoleHilbert",
+    "MagHK.MonopoleInverse",
+    "MagHK.MonopoleMultiplet",
+    "MagHK.MonopoleNonSlater",
+    "MagHK.MonopoleObstruction",
+    "MagHK.MonopoleOccupied",
+    "MagHK.MonopoleOrbital",
+    "MagHK.MonopolePairLaw",
+    "MagHK.MonopolePairTransition",
+    "MagHK.MonopoleParamagnetic",
+    "MagHK.MonopolePatchGauge",
+    "MagHK.MonopolePatches",
+    "MagHK.MonopolePositive",
+    "MagHK.MonopoleQuadrature",
+    "MagHK.MonopoleRadial",
+    "MagHK.MonopoleRadialDomain",
+    "MagHK.MonopoleRadialIsometry",
+    "MagHK.MonopoleRadiality",
+    "MagHK.MonopoleRayleigh",
+    "MagHK.MonopoleRealization",
+    "MagHK.MonopoleRotationPotential",
+    "MagHK.MonopoleSinglet",
+    "MagHK.MonopoleSphere",
+    "MagHK.MonopoleStationarity",
+    "MagHK.MonopoleSubmission",
+    "MagHK.MonopoleTensorDomain",
+    "MagHK.MonopoleTimeReversal",
+    "MagHK.MonopoleTransition",
+    "MagHK.MonopoleTrial",
+    "MagHK.MonopoleWeakFlux",
+    "MagHK.Noninteracting",
+    "MagHK.NoninteractingTheorem",
+    "MagHK.NormContinuity",
+    "MagHK.NormLimits",
+    "MagHK.OneParticle",
+    "MagHK.OneParticleContinuity",
+    "MagHK.OneParticleCurl",
+    "MagHK.OneParticleTheorem",
+    "MagHK.OneParticleWeak",
+    "MagHK.OperatorCompactness",
+    "MagHK.OperatorPreliminaries",
+    "MagHK.OperatorSpectrum",
+    "MagHK.OperatorTimeReversal",
+    "MagHK.OrbitalDomains",
+    "MagHK.Ordering",
+    "MagHK.OrderingTheorem",
+    "MagHK.ParamagneticDiscussion",
+    "MagHK.ParameterContinuity",
+    "MagHK.PartnerAsymptotics",
+    "MagHK.PassiveSpin",
+    "MagHK.PassiveSpinCounterexample",
+    "MagHK.PlanarEndpointAsymptotics",
+    "MagHK.PlanarSpectralLibrary",
+    "MagHK.Poincare",
+    "MagHK.PotentialAsymptotics",
+    "MagHK.PotentialInfinity",
+    "MagHK.PotentialSpaceIdentification",
+    "MagHK.PotentialSpaces",
+    "MagHK.RadialCurrent",
+    "MagHK.RadialEndpoints",
+    "MagHK.RadialRealization",
+    "MagHK.SecondOrbital",
+    "MagHK.SeparatedDifferential",
+    "MagHK.Slater",
+    "MagHK.SpinChart",
+    "MagHK.SpinGeometry",
+    "MagHK.SpinGroup",
+    "MagHK.Symmetry",
+    "MagHK.TensorRealization",
+    "MagHK.TimeReversal",
+    "MagHK.WeakDifferential",
+    "MagHK.WeakGauge"
+  ],
+  "source_sha256": {
+    "MagHK/AngularIntegral.lean": "5219ac986bd99f397f8a18d2086df33233ba1b33bfc6c4f5e5bf4c0c83d045eb",
+    "MagHK/Axial.lean": "7c3992edf07ecbdd9bfda5f0b0c3d72993494d1c02f713ce15f96576068215f3",
+    "MagHK/Ordering.lean": "2cd61bc431ee41530b764e14e4a6ee1022774c18be0bd3efe320aefa769ceaef",
+    "MagHK/OperatorSpectrum.lean": "09518be38429bfdf82363a196ba98ec42c3e3d978d76eb1f4f4f27bd76dd1c4a",
+    "MagHK/AxialRealization.lean": "93475a322490288368df9acec1ca6de136d58496f12ee89186e92cb0023bdfeb",
+    "MagHK/BanachDuality.lean": "f9b257ac82a25872cc5b64853066c3d49f5ac32c74e48db53ad8035a2c1a6192",
+    "MagHK/Noninteracting.lean": "da22fb975a9f604c8077b2ad47c61b8d172d25fe3e09ce72658f4ae20da50d98",
+    "MagHK/ParameterContinuity.lean": "fccd746c7b8a36c89dc2f1ab61c371887143479c9a583f2afc54f1fb96049315",
+    "MagHK/NormLimits.lean": "4db732606b93a32cab24d065c6b437edd21edca3d039b7e3d8ef7fdaa36e5cb8",
+    "MagHK/NormContinuity.lean": "7388549980e86c1a1fbd5195cea80b63417bb3ccff559237190e2c81e8266492",
+    "MagHK/Slater.lean": "605338b42baded9db30669ca1c558e58f10c07eb0f59dc7d76260d3652a3cb06",
+    "MagHK/CylindricalOrbitals.lean": "5dd8b87beddf9dbea416c7d7b250872bdeec1b49149cf87a74cda44bc53b28c5",
+    "MagHK/RadialRealization.lean": "28d1db021ce20a681ea82e5b12e0c91ce15f12ab308738ff736ff3e8f07f753d",
+    "MagHK/RadialEndpoints.lean": "7338d449fe0807557d8dc0db241e9cbd6a19c7890a0b13d40c783bdf9e141ed4",
+    "MagHK/PotentialInfinity.lean": "f6a16e4d0b27b2154d90586b2acf89a6fdc054ca6ab21270a2f692297915cfc6",
+    "MagHK/PartnerAsymptotics.lean": "0c2d16f2cb46ff159aba42a92ec2852fba4af20cd0e1795056148fda27bbaf0c",
+    "MagHK/SecondOrbital.lean": "763b1e0fbf31783c8b65c98d2cfd65431e0f8868867803ce96ec49e75bbf1cd0",
+    "MagHK/OrbitalDomains.lean": "a8898e36649ed0a1d63e9747920188613d9f6832c73de05e4074c69489363742",
+    "MagHK/BoundedRealization.lean": "34f2c23f63560296080319d9d7af37da1f35e98ae9fa9ae0789517b9f7af6993",
+    "MagHK/Cartesian.lean": "206937002563083630d6223b0f00e9ab85e18b5679f79b8a93208f76b2329672",
+    "MagHK/CartesianOrbitals.lean": "cdc4f4e8e35609a58b0bb8b89e12c25eb7cc8274b19a3da7ed1510159384aefc",
+    "MagHK/Curvature.lean": "31cd3dc5aacd8c3e177eb17a2c30775e806a94f64113b9638214919be4d1918e",
+    "MagHK/ConstructionData.lean": "b0c73520759f9b06e59e60290e303b639e8e2c6f2d4435d1cc028b22c47a1325",
+    "MagHK/ConcreteSlater.lean": "4c163fa5246b52c3a3bc2c6ba6c73b80bd36cd7f32f705ef55be2228053999c7",
+    "MagHK/CoordinateLaplacian.lean": "0b5d5fadfd70aaf6431374ea941794f19b0e6c40ed26115dc03fe959807c4ed2",
+    "MagHK/CoordinateMagnetic.lean": "252293608b87744118769a82c36ab54af9ab6e144bc76f70a679996ef0bd0f99",
+    "MagHK/Monopole.lean": "4c157fe19680b8b249012e62a9b2c6bd52866dde7711326fc01ace0e92c333da",
+    "MagHK/Correlation.lean": "4cda43f5a55de3d9a02f6dad00da91710a7d6521ab465a2aa0eb343d0c179c7b",
+    "MagHK/PlanarSpectralLibrary.lean": "60fbb56f18e261c78cc5ab1a4dd560f92bc213d67083c79082276b753c60c9f7",
+    "MagHK/TensorRealization.lean": "6db5d88dbe544fe9bd4fd66d0dc069d06c621a124175e2e0f2032a685d14d49c",
+    "MagHK/FermionRealization.lean": "f5ed633f870eac89543b579cb33ff81636e17dbd3acf3a1b285616c35764d875",
+    "MagHK/TimeReversal.lean": "2227434d4e1e2091417c079f90f2dc88ffaf05cd942a7e9a3c5d97dd872e70ab",
+    "MagHK/OperatorTimeReversal.lean": "d5948e58d7683cad4d6782dd178bd0d5262b89260240d8965a5d5cb4907341bf",
+    "MagHK/GaussianNormalization.lean": "01dc690a82d45cf34b52b7cef34f33b9200d1aa1dd80677e3a9d3ad63cf928a7",
+    "MagHK/GaussianIntegrals.lean": "01b0a2752978d4935bd329ad43ec421a1933061e9217c9530542dea84ede92e1",
+    "MagHK/GaussianAxial.lean": "b9f7b4522dcc506b29ce398a010ebf821037367f90cd7f3656877eddde26c09e",
+    "MagHK/GaussianDomains.lean": "c1d1096da4f87a9772ae78eedabf8dab607d6975cf8c31b43e52d11d05bf2c9f",
+    "MagHK/GaussianRealization.lean": "bce59b145950ed24623166ac76e13391d0fb3612d98b68864daa9b9600d9d7a7",
+    "MagHK/GaussianPlanar.lean": "a3f9951e788f6398cc13291bf593399d267a390030109669606f1cc4e41e1ef3",
+    "MagHK/GaussianOrbitals.lean": "6687966a0056710ba01a9dc1017d9f964a57501ecbe49cdd47e31dc0794e7026",
+    "MagHK/GaussianSlater.lean": "7951b7ecc999be641b1a4292e2cdc66f712ff14cc65161e23f6d74e8e1b9d729",
+    "MagHK/GaussianFermion.lean": "07618d70297846ebab1502ed1c77f670689c38a42d935409ac87f623d238436b",
+    "MagHK/CounterexamplePair.lean": "8a8f8c09a3eef50d3680272a2aad513fcef16bfd6ec407e7880c63973af28044",
+    "MagHK/MonopoleOrbital.lean": "b537e94e311f872969eb9835fa543545f1ae930367e44b1e365e8cbaaf32433b",
+    "MagHK/MonopoleTrial.lean": "9a0db7b838ecf4b99a8b4bbe6456e88a279dde9f72084a56f854f36a95664c71",
+    "MagHK/MonopoleHilbert.lean": "898b31abcdf9f00771a155b9e525b0dceaaf4e21e78a7b1f87255ee1ee8ffd3c",
+    "MagHK/MonopoleRadial.lean": "b27f9b016f27849f106f6cb3f3184df373925938aeb8e8757b8e0c57696654fc",
+    "MagHK/MonopoleRadialDomain.lean": "2350cb8886d42259b33c591bb47a611544d63ba37538589747a9787039571475",
+    "MagHK/MonopoleAngular.lean": "dcd7406722bff7a20dceff767f47d3edd25afafb1c17e8d6bea4fef630ced34a",
+    "MagHK/OperatorCompactness.lean": "18956aad5a5d783dcd82b7bc423deb451ad2cad8a6cbd36bf12c28f2d0a57a59",
+    "MagHK/MonopoleRealization.lean": "a8aef84ff12c7db0c90bc5263f844a42816645d77cb87dac617cafe8ee152d6b",
+    "MagHK/ManyBodyTimeReversal.lean": "d451aa57745a98fe7dd5d5d53a60e5c49df33dadc0e35459c575ddd32eee6334",
+    "MagHK/GeneralGauge.lean": "277644fc9f51c13fb10d827d10004e24a76409c3a7f573d073243d02dc76a148",
+    "MagHK/GeneralGaugeWeak.lean": "bbfe8e9c07b7ffb606f33c892a6e58ef4c1d2343d4286ca943958b47867a9ea8",
+    "MagHK/GaussianCompactness.lean": "ac0b944a4c48a2a12590871d2ea87fa8e313e6461bb2bf3ae940d0e8962f114d",
+    "MagHK/PotentialSpaces.lean": "de6714614d97027440091245730157778b96a6a85a7325d789deae2820b3f7fc",
+    "MagHK/GaussianOutside.lean": "e0dc38a38eab4abef1aa08e4bdb27c9b2f852653d81d1bd62fb6ebbd81c268bd",
+    "MagHK/Symmetry.lean": "bf8f861b7d4fc72f7c05b37b120423ef5154e05a72c4ff749074baea31021cba",
+    "MagHK/SpinGroup.lean": "a2f84c4f0c975c7c33f65a3e886f8f265bfe9d9ccabd0e5aed42e1b342dbe5a5",
+    "MagHK/MonopoleGeometry.lean": "604bf4c8a78ba57cfacc401339fbf2bcc411762f01b92ebeabe696c809cf4084",
+    "MagHK/SpinChart.lean": "7d42cf5482f34b48028659786bef3653f072ad29a9796466606236263f1aee75",
+    "MagHK/MonopoleSphere.lean": "038d38f5258935933409f64ec6cf14b343a98857f8db9d100e6cb4c538321c95",
+    "MagHK/MonopoleQuadrature.lean": "bd8fe8029e9a7b2d4a7f08d0a4b43c7545c5378ca4e01a06ce789cd8f98b030c",
+    "MagHK/MonopolePairLaw.lean": "f668b38fa95b9f93140e8f2af2e1b7b796b4e651a13f6067dc0f075a92ddab58",
+    "MagHK/SpinGeometry.lean": "2b9d615d3094711bbfc9123ed6695278c19bf904b317ce659c032050bc6c09cf",
+    "MagHK/MonopoleFlux.lean": "e247ec98c728d37e7055bd5b808e77902575b1cb119a59fcd3ef55c18846e664",
+    "MagHK/WeakGauge.lean": "58e87d7ae198c0731c7ff0a05d5147733b21cdc37d741eaff10e696da212e832",
+    "MagHK/NoninteractingTheorem.lean": "6b1b570b359bf982651e3f854f5e9111c4f620ee83ab7fb882a1abd73fd06ff4",
+    "MagHK/CurrentCompletion.lean": "985790890c6f86b357522c38acda34d481f062228bc8f484e9c721b96b401251",
+    "MagHK/DiracString.lean": "00a51230f7bc709d7aa5f1191de8cae497977b5cf00b87c9986564782545630d",
+    "MagHK/MonopoleMultiplet.lean": "e90b54a21e6f9c7592ec05b9624b0d680364f0c056a01a9f232b24f481a96ac9",
+    "MagHK/SeparatedDifferential.lean": "c14fa314789686eaf093fb4000b91a802ea073eea098aa52f778ea0ac8827879",
+    "MagHK/DoubletDeterminant.lean": "8845d7a32f200c237ba69666de81a130720e7227a035dbe116a2f27192073528",
+    "MagHK/ExpPolynomialMoments.lean": "29585733b15b2535549981b5cb0f4b7b9846a02f87b0e52c01cbe7328d38d483",
+    "MagHK/FunctionSpaces.lean": "b4e9ad6cbcd9f98131ea141d2590817442ebe0c6772b908d99b573b194df9c9f",
+    "MagHK/GaussianGap.lean": "044c364ea638968c69e773baf9c09d872d82584439f6f0995f042430c7194193",
+    "MagHK/GaussianParameterBounds.lean": "d96f7a7361ddfe1e25e6832633b756846cca0f5f9af6341e4cd3ad4f50492139",
+    "MagHK/GeneralGaugeShift.lean": "8c63d75d45bd622b19608b03f33b72cce94bb89a17445f37718194bf55ea3639",
+    "MagHK/MagneticForms.lean": "f4f7ea78d39e7a984d6482779766d35d9fd1841a9d02eea7c7f91509e75706c4",
+    "MagHK/ManyBodyDensity.lean": "c2d658a71f9c21b52a5f01d748dc0f6b567f04037913e155c9e2f041ede458fc",
+    "MagHK/Poincare.lean": "dda8560dc032353d7bfa5e4de97af21c86531efa0b69e3e0f4901fe2e2f682db",
+    "MagHK/WeakDifferential.lean": "d35f76d48edae20ba5546505d9d735d0c23710e0f0a467bb089b61f84214e255",
+    "MagHK/MarginalSpaces.lean": "393ba9b6f97516023a9c7353a81b77ab1f2f8b7d370cfb6ce93da824c0ec493c",
+    "MagHK/MonopolePatches.lean": "0b185ccb26b99284e6a109471f411884d6d6ecdaf65d18e4c8ee8950ff12bb64",
+    "MagHK/MonopolePatchGauge.lean": "143063bef8145bb7716eec8c8285c3a473980bfed56af49a9a993b80afd46fec",
+    "MagHK/MonopoleCartesianDifferential.lean": "b21d68bee04259d577b61373cf48e72ad1eb7cead5cbbc4b49e1f523b46f35d5",
+    "MagHK/MonopoleDifferential.lean": "9bd9d791351f0b3fb64ea41058694c4d0f54c41bfe69e6f383908341461dfc14",
+    "MagHK/MonopoleCartesianOperator.lean": "91e3ddbae499b3984923ab3f665bef50ca0cdc45a8584d9801af6f93130d8d68",
+    "MagHK/MonopoleCoordinates.lean": "873dbb553cdf9c3edc2c344aad0d040364db6810b303f78ec6fdf28a9ce20fff",
+    "MagHK/MonopoleTensorDomain.lean": "ac98f5104ee54916fb7e626c8f1fa18d19791c820685af5775ecea63642f1ca7",
+    "MagHK/MonopoleObstruction.lean": "719df14cbda720b9714ea6319e5a5e62b4b3f44a692c012951e238d268afeca9",
+    "MagHK/MonopoleExpectation.lean": "5d30f254dd1de4ffd194ae120609e0b5a8be020601e74ff5b8a86ec2ab45b6f2",
+    "MagHK/MonopoleCorrelation.lean": "8edd1f3095d5a8700c242123ba0f224ee5b0a98945076a66ae639d73c711310c",
+    "MagHK/MonopoleGround.lean": "5a8db5d415119d6f294ac6f7b3cca6de9c6f1f64d89ff44c141b8efec6361b7d",
+    "MagHK/MonopoleOccupied.lean": "e659fb36b93149ca6f9a68e8b736b6c1b17b465d626d35f4a0f99b3bc66b21e5",
+    "MagHK/MonopoleNonSlater.lean": "1adedba3738582b489561c5d7c13cb8fae923aa498112e9063ff9784301dce41",
+    "MagHK/MonopoleCurrent.lean": "7aa941c2c29ddde470b1eda64a18b5899d9d0a56857d26eeb15caaeca859c90a",
+    "MagHK/MonopoleCovariance.lean": "d20956db78bde6dac8835e9ba71ab42c0615540bf052a2d9514b682e992a7681",
+    "MagHK/MonopoleFormCovariance.lean": "9d237cd6c715be74cafd8778cf1c30145a652df36d85880528bb7d30ba27245c",
+    "MagHK/MonopoleSinglet.lean": "ac706710e918316a35fe05bbc8eacc6afda4f51240abb9a51a20ab8b35b9b4ca",
+    "MagHK/MonopoleRayleigh.lean": "f3fa850ba2e6e8700e3f6f1fce7127f1489178cba4a0fb535faa65d7c41c3b8e",
+    "MagHK/MonopoleRotationPotential.lean": "7f68bb57bb23130ebf470169ca82638df602e40ef51c5490e8517f6a10f60a27",
+    "MagHK/MonopolePositive.lean": "052e6b5124f92adb4427b50b21d8dc1119ff5ec4a18095777671c328c96bd926",
+    "MagHK/MonopoleTimeReversal.lean": "707bab6ed665c8a1c15cb8f89b39fad55dc7114a90bacd923fce730950a8f7cd",
+    "MagHK/MonopoleInverse.lean": "6acdbe7de5a36ec71b5ba4181fc7a132e62f1f20a3a7d331cda436cda982054c",
+    "MagHK/MonopoleCurrentAveraging.lean": "f78b522a5e2ed168a9533652ba3f0d601ce209657fc55e89bd7e4685897f4183",
+    "MagHK/MonopoleStationarity.lean": "fe02c4fabcadd1ebc02998deaeeaf19a7fbaad1df2dc6280999aee2a34f4d819",
+    "MagHK/MonopoleCurrentTest.lean": "d02b5833b7ecb037b50e90f09d0a6ffca246968c25c1ce24277f5a13b09cd054",
+    "MagHK/RadialCurrent.lean": "5d816dbd4c73351dad40dbfc2be89ae7411aec2201ce1df44d5f3c6334b81ab4",
+    "MagHK/MonopoleCurrentZero.lean": "606d7871f3f8810809274f8244a173222725c885162306afe00296b1e7152eda",
+    "MagHK/MonopoleFlow.lean": "340feb48b3325704a4ccd995190215eb50131418daeb6268887ff1cfec1ae4cb",
+    "MagHK/MonopoleWeakFlux.lean": "95a5349b6becd4d45ef9c1878d45acf08b77add8ee8aaab2d902f151c3270ef4",
+    "MagHK/MonopoleCurrentConclusion.lean": "3d070e343655797f3bee62bcf9b66888b411124ba52e7f8294f4664b6321d45d",
+    "MagHK/MonopoleCounterexample.lean": "78916986188620c92e2e4139ba5664f4060f8697dd1ca47069c8905b5c8b3618",
+    "MagHK/MonopoleCurrentBound.lean": "3eb85a9a8ede62b74e605e609d09bedb9fd64902020807f43464248245cd2b50",
+    "MagHK/MonopoleDensity.lean": "85c9d8881058e85fa3a155e746f99e48969fca6cc4c979492b31c1df296b6372",
+    "MagHK/MonopoleEndpointDomains.lean": "3cead6be2621de082a1a529eb54aeee603525105af29c01fa9e62837c600c4c3",
+    "MagHK/MonopoleEndpointAsymptotics.lean": "e992df1de8036ab6356f618d2bcf637826750d6230a2f5993ebb001f9acc8272",
+    "MagHK/MonopoleGlobalPotential.lean": "65c33ec8d4390647062d57d3da0aac4325291378cc83bb137296b92beb24d10e",
+    "MagHK/MonopoleHardy.lean": "4fd9eb112f1fff8518e6887707a8220f46df9d0aff87188d4066062efebf1e9c",
+    "MagHK/MonopoleTransition.lean": "7c4b34cb4babb54d2510d5da465e38b30a1320731e638d2c32f21e543b32966d",
+    "MagHK/MonopolePairTransition.lean": "274afc3e0d650c097d5b272f9036ce066a7a54a759fc9f7ddc5539bf21e5e686",
+    "MagHK/MonopoleParamagnetic.lean": "f57fcde533be73deec6a1fd7c605b01ce9acf790e93826609678484bfc682ac4",
+    "MagHK/MonopoleRadialIsometry.lean": "8a96e9730fbecb83c336a168a2d625e58a9278b7c7c2a4012f250848d3bd0d6f",
+    "MagHK/MonopoleRadiality.lean": "2574a8aa67392b3692d7cccc17dd425abab564c0159d17800de1bd8dd3dae8b5",
+    "MagHK/MonopoleSubmission.lean": "77465de24e18ffbb4dd3ded1e389729f5ed5aa21cd4e311c759ded808bf8e509",
+    "MagHK/OneParticle.lean": "48aa7ffa8cbf51e22d59e200fd01241d3dc35a0665fb111f3d88ceb4a2710af0",
+    "MagHK/OneParticleWeak.lean": "1dff2617accfa521c47e7ead7376370fa3ccbb476a214d74f680d7ae8f421606",
+    "MagHK/OneParticleCurl.lean": "3c0dd9ca7cd299193a70ee3b51cd5a488b1eff2b91d72d2515fe89f0e066166a",
+    "MagHK/OneParticleTheorem.lean": "e104ed61221c5046c8b791dfecdf92b8314c0c5ab70af32138888c4b1adfdf8f",
+    "MagHK/OneParticleContinuity.lean": "9650f9aa90a524abe28dae9b675143c1dece8d67c207d5d99297bfb8bfb1d8a4",
+    "MagHK/OperatorPreliminaries.lean": "b02d7ede90d614d97e834a25ab8c898fc731938a9227c971a83e582c591dc74f",
+    "MagHK/OrderingTheorem.lean": "5fb3502c8f982a9fba670cffae2df1aa877ac49e945d1f7c927150077d1b46e2",
+    "MagHK/ParamagneticDiscussion.lean": "73f145d9d22a7b7bb5d90cd9fe84f1ba7d9d228d8d05883c18ade33b268e34c6",
+    "MagHK/PassiveSpin.lean": "f223acec41aa8cb508eecf709d25b3534b05a281c20f0acf63e8aed4384961d4",
+    "MagHK/PassiveSpinCounterexample.lean": "26cf9f936dcfa878f21a9f14a661b7df11b28be67e79444527ac58f8f161419f",
+    "MagHK/PlanarEndpointAsymptotics.lean": "8f42e44862863c92bb9b7c7f811a1b4a24a883f7c1a782acb29d1db63577d05d",
+    "MagHK/PotentialAsymptotics.lean": "e8495c03b75895c0c1374a4d25c69e86b37b77ce1628b3cedb607cf4a2984d63",
+    "MagHK/PotentialSpaceIdentification.lean": "eb66207195f37c521c4ef4544bc8be90639a3a334ed16a0f4e98e8d9f33b84ed",
+    "MagHK.lean": "c6d02af2e04659024fbe6b2adc5829732bfa62b055a179324f6482f9f3ddd12d",
+    "Audit.lean": "5b1cc1dfa5ae8fe77c240eb9cddc5887fcb94ef6f67a7e96bee250af72cd051f"
+  },
+  "sources_changed_during_run": []
+}

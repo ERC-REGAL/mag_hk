@@ -1,0 +1,1282 @@
+Checking MagHK/AngularIntegral.lean
+MagHK/AngularIntegral.lean:99:12: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+
+Exit code 0
+
+Checking MagHK/Axial.lean
+
+Exit code 0
+
+Checking MagHK/Ordering.lean
+
+Exit code 0
+
+Checking MagHK/OperatorSpectrum.lean
+
+Exit code 0
+
+Checking MagHK/AxialRealization.lean
+
+Exit code 0
+
+Checking MagHK/BanachDuality.lean
+
+Exit code 0
+
+Checking MagHK/Noninteracting.lean
+
+Exit code 0
+
+Checking MagHK/ParameterContinuity.lean
+
+Exit code 0
+
+Checking MagHK/NormLimits.lean
+
+Exit code 0
+
+Checking MagHK/NormContinuity.lean
+
+Exit code 0
+
+Checking MagHK/Slater.lean
+MagHK/Slater.lean:40:0: warning: automatically included section variable(s) unused in theorem `MagHK.Slater.determinant_pairing_expansion`:
+  [MeasurableSpace Y]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [MeasurableSpace Y] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+MagHK/Slater.lean:92:0: warning: automatically included section variable(s) unused in theorem `MagHK.Slater.slater_pairing_pointwise`:
+  [MeasurableSpace Y]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [MeasurableSpace Y] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+MagHK/Slater.lean:190:0: warning: automatically included section variable(s) unused in theorem `MagHK.Slater.slater_antisymmetry`:
+  [MeasurableSpace Y]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [MeasurableSpace Y] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+
+Exit code 0
+
+Checking MagHK/CylindricalOrbitals.lean
+
+Exit code 0
+
+Checking MagHK/RadialRealization.lean
+MagHK/RadialRealization.lean:69:19: warning: `if_pos` has been deprecated: Use `ite_eq_left` instead
+
+Exit code 0
+
+Checking MagHK/RadialEndpoints.lean
+MagHK/RadialEndpoints.lean:97:2: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+MagHK/RadialEndpoints.lean:135:2: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+MagHK/RadialEndpoints.lean:207:2: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+
+Exit code 0
+
+Checking MagHK/PotentialInfinity.lean
+MagHK/PotentialInfinity.lean:25:2: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+MagHK/PotentialInfinity.lean:101:6: warning: Unused tactic linter: `ring` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+MagHK/PotentialInfinity.lean:101:6: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+MagHK/PotentialInfinity.lean:129:6: warning: Unused tactic linter: `ring` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+MagHK/PotentialInfinity.lean:129:6: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+MagHK/PotentialInfinity.lean:180:64: warning: This simp argument is unused:
+  Pi.div_apply
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [id_eq, Pi.add_apply, Pi.mul_apply, Pi.pow_apply, pow_one, mul_one, one_mul, zero_mul, mul_zero,
+    zero_add, add_zero, Nat.cast_ofNat, Nat.reduceSub]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+MagHK/PotentialInfinity.lean:181:33: warning: This simp argument is unused:
+  zero_mul
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [id_eq, Pi.add_apply, Pi.mul_apply, Pi.pow_apply, Pi.div_apply, pow_one, mul_one, one_mul, mul_zero,
+    zero_add, add_zero, Nat.cast_ofNat, Nat.reduceSub]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+MagHK/PotentialInfinity.lean:181:43: warning: This simp argument is unused:
+  mul_zero
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [id_eq, Pi.add_apply, Pi.mul_apply, Pi.pow_apply, Pi.div_apply, pow_one, mul_one, one_mul, zero_mul,
+    zero_add, add_zero, Nat.cast_ofNat, Nat.reduceSub]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+MagHK/PotentialInfinity.lean:181:53: warning: This simp argument is unused:
+  zero_add
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [id_eq, Pi.add_apply, Pi.mul_apply, Pi.pow_apply, Pi.div_apply, pow_one, mul_one, one_mul, zero_mul,
+    mul_zero, add_zero, Nat.cast_ofNat, Nat.reduceSub]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+MagHK/PotentialInfinity.lean:181:63: warning: This simp argument is unused:
+  add_zero
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [id_eq, Pi.add_apply, Pi.mul_apply, Pi.pow_apply, Pi.div_apply, pow_one, mul_one, one_mul, zero_mul,
+    mul_zero, zero_add, Nat.cast_ofNat, Nat.reduceSub]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+MagHK/PotentialInfinity.lean:184:4: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+
+Exit code 0
+
+Checking MagHK/PartnerAsymptotics.lean
+MagHK/PartnerAsymptotics.lean:67:2: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+MagHK/PartnerAsymptotics.lean:101:2: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+MagHK/PartnerAsymptotics.lean:165:71: warning: This simp argument is unused:
+  inv_pow
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [div_eq_mul_inv, mul_inv_rev]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+MagHK/PartnerAsymptotics.lean:165:22: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+MagHK/PartnerAsymptotics.lean:165:32: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+MagHK/PartnerAsymptotics.lean:165:80: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+MagHK/PartnerAsymptotics.lean:259:2: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+MagHK/PartnerAsymptotics.lean:301:2: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+
+Exit code 0
+
+Checking MagHK/SecondOrbital.lean
+
+Exit code 0
+
+Checking MagHK/OrbitalDomains.lean
+
+Exit code 0
+
+Checking MagHK/BoundedRealization.lean
+
+Exit code 0
+
+Checking MagHK/Cartesian.lean
+MagHK/Cartesian.lean:318:31: warning: Unused tactic linter: `ring` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+MagHK/Cartesian.lean:318:31: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+MagHK/Cartesian.lean:347:17: warning: Unused tactic linter: `ring` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+MagHK/Cartesian.lean:347:17: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+
+Exit code 0
+
+Checking MagHK/CartesianOrbitals.lean
+
+Exit code 0
+
+Checking MagHK/Curvature.lean
+
+Exit code 0
+
+Checking MagHK/ConstructionData.lean
+
+Exit code 0
+
+Checking MagHK/ConcreteSlater.lean
+MagHK/ConcreteSlater.lean:178:2: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+MagHK/ConcreteSlater.lean:204:6: warning: Unused tactic linter: `ring` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+MagHK/ConcreteSlater.lean:204:6: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+MagHK/ConcreteSlater.lean:249:13: warning: `ContinuousLinearMap.smul_apply` has been deprecated: Use `smul_apply` instead
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.smul_apply` to `smul_apply x`).
+MagHK/ConcreteSlater.lean:249:45: warning: `ContinuousLinearMap.sub_apply` has been deprecated: Use `sub_apply` instead
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.sub_apply` to `sub_apply x`).
+
+Exit code 0
+
+Checking MagHK/CoordinateLaplacian.lean
+MagHK/CoordinateLaplacian.lean:91:38: warning: `ContinuousLinearMap.sum_apply` has been deprecated: Use `sum_apply` instead
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.sum_apply` to `sum_apply x`).
+MagHK/CoordinateLaplacian.lean:92:10: warning: `ContinuousLinearMap.smul_apply` has been deprecated: Use `smul_apply` instead
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.smul_apply` to `smul_apply x`).
+
+Exit code 0
+
+Checking MagHK/CoordinateMagnetic.lean
+MagHK/CoordinateMagnetic.lean:36:13: warning: `ContinuousLinearMap.add_apply` has been deprecated: Use `add_apply` instead
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.add_apply` to `add_apply x`).
+MagHK/CoordinateMagnetic.lean:36:44: warning: `ContinuousLinearMap.smul_apply` has been deprecated: Use `smul_apply` instead
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.smul_apply` to `smul_apply x`).
+MagHK/CoordinateMagnetic.lean:37:36: warning: `ContinuousLinearMap.zero_apply` has been deprecated: Use `zero_apply` instead
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.zero_apply` to `zero_apply x`).
+MagHK/CoordinateMagnetic.lean:39:27: warning: This simp argument is unused:
+  add_zero
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [ContinuousLinearMap.add_apply, ContinuousLinearMap.smul_apply, ContinuousLinearMap.comp_apply,
+    ContinuousLinearMap.zero_apply, ContinuousLinearMap.flip_apply, map_zero, Function.comp_apply, smul_eq_mul,
+    zero_add, mul_zero, zero_mul, Complex.ofRealCLM_apply, directional]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+MagHK/CoordinateMagnetic.lean:39:37: warning: This simp argument is unused:
+  mul_zero
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [ContinuousLinearMap.add_apply, ContinuousLinearMap.smul_apply, ContinuousLinearMap.comp_apply,
+    ContinuousLinearMap.zero_apply, ContinuousLinearMap.flip_apply, map_zero, Function.comp_apply, smul_eq_mul,
+    zero_add, add_zero, zero_mul, Complex.ofRealCLM_apply, directional]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+MagHK/CoordinateMagnetic.lean:39:47: warning: This simp argument is unused:
+  zero_mul
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [ContinuousLinearMap.add_apply, ContinuousLinearMap.smul_apply, ContinuousLinearMap.comp_apply,
+    ContinuousLinearMap.zero_apply, ContinuousLinearMap.flip_apply, map_zero, Function.comp_apply, smul_eq_mul,
+    zero_add, add_zero, mul_zero, Complex.ofRealCLM_apply, directional]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+
+Exit code 0
+
+Checking MagHK/Monopole.lean
+
+Exit code 0
+
+Checking MagHK/Correlation.lean
+
+Exit code 0
+
+Checking MagHK/PlanarSpectralLibrary.lean
+
+Exit code 0
+
+Checking MagHK/TensorRealization.lean
+
+Exit code 0
+
+Checking MagHK/FermionRealization.lean
+
+Exit code 0
+
+Checking MagHK/TimeReversal.lean
+
+Exit code 0
+
+Checking MagHK/OperatorTimeReversal.lean
+
+Exit code 0
+
+Checking MagHK/GaussianNormalization.lean
+
+Exit code 0
+
+Checking MagHK/GaussianIntegrals.lean
+
+Exit code 0
+
+Checking MagHK/GaussianAxial.lean
+
+Exit code 0
+
+Checking MagHK/GaussianDomains.lean
+
+Exit code 0
+
+Checking MagHK/GaussianRealization.lean
+
+Exit code 0
+
+Checking MagHK/GaussianPlanar.lean
+
+Exit code 0
+
+Checking MagHK/GaussianOrbitals.lean
+
+Exit code 0
+
+Checking MagHK/GaussianSlater.lean
+MagHK/GaussianSlater.lean:174:6: warning: Unused tactic linter: `ring` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+MagHK/GaussianSlater.lean:174:6: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+MagHK/GaussianSlater.lean:219:13: warning: `ContinuousLinearMap.smul_apply` has been deprecated: Use `smul_apply` instead
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.smul_apply` to `smul_apply x`).
+MagHK/GaussianSlater.lean:219:45: warning: `ContinuousLinearMap.sub_apply` has been deprecated: Use `sub_apply` instead
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.sub_apply` to `sub_apply x`).
+
+Exit code 0
+
+Checking MagHK/GaussianFermion.lean
+
+Exit code 0
+
+Checking MagHK/CounterexamplePair.lean
+
+Exit code 0
+
+Checking MagHK/MonopoleOrbital.lean
+
+Exit code 0
+
+Checking MagHK/MonopoleTrial.lean
+MagHK/MonopoleTrial.lean:311:52: warning: This simp argument is unused:
+  Real.coe_toNNReal
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [sq_nonneg r]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+
+Exit code 0
+
+Checking MagHK/MonopoleHilbert.lean
+
+Exit code 0
+
+Checking MagHK/MonopoleRadial.lean
+
+Exit code 0
+
+Checking MagHK/MonopoleRadialDomain.lean
+
+Exit code 0
+
+Checking MagHK/MonopoleAngular.lean
+Try this:
+  [apply] ring_nf
+  
+  The `ring` tactic failed to close the goal. Use `ring_nf` to obtain a normal form.
+    
+  Note that `ring` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead.
+
+Exit code 0
+
+Checking MagHK/OperatorCompactness.lean
+
+Exit code 0
+
+Checking MagHK/MonopoleRealization.lean
+
+Exit code 0
+
+Checking MagHK/ManyBodyTimeReversal.lean
+
+Exit code 0
+
+Checking MagHK/GeneralGauge.lean
+MagHK/GeneralGauge.lean:84:29: warning: `ContinuousLinearMap.sum_apply` has been deprecated: Use `sum_apply` instead
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.sum_apply` to `sum_apply x`).
+MagHK/GeneralGauge.lean:84:29: warning: This simp argument is unused:
+  ContinuousLinearMap.sum_apply
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [direction, gradient, ContinuousLinearMap.comp_apply, Pi.single_apply, apply_ite]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+MagHK/GeneralGauge.lean:95:13: warning: `ContinuousLinearMap.smul_apply` has been deprecated: Use `smul_apply` instead
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.smul_apply` to `smul_apply x`).
+MagHK/GeneralGauge.lean:111:13: warning: `ContinuousLinearMap.add_apply` has been deprecated: Use `add_apply` instead
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.add_apply` to `add_apply x`).
+MagHK/GeneralGauge.lean:111:44: warning: `ContinuousLinearMap.smul_apply` has been deprecated: Use `smul_apply` instead
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.smul_apply` to `smul_apply x`).
+MagHK/GeneralGauge.lean:216:9: warning: Variable name `hη` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hη
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+
+Exit code 0
+
+Checking MagHK/GeneralGaugeWeak.lean
+MagHK/GeneralGaugeWeak.lean:76:15: warning: `ContinuousLinearMap.add_apply` has been deprecated: Use `add_apply` instead
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.add_apply` to `add_apply x`).
+MagHK/GeneralGaugeWeak.lean:76:46: warning: `ContinuousLinearMap.smul_apply` has been deprecated: Use `smul_apply` instead
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.smul_apply` to `smul_apply x`).
+
+Exit code 0
+
+Checking MagHK/GaussianCompactness.lean
+
+Exit code 0
+
+Checking MagHK/PotentialSpaces.lean
+
+Exit code 0
+
+Checking MagHK/GaussianOutside.lean
+MagHK/GaussianOutside.lean:17:8: warning: This simp argument is unused:
+  Real.volume_univ
+
+Hint: Omit it from the simp argument list.
+  [apply] simp
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+
+Exit code 0
+
+Checking MagHK/Symmetry.lean
+
+Exit code 0
+
+Checking MagHK/SpinGroup.lean
+MagHK/SpinGroup.lean:56:30: warning: This simp argument is unused:
+  Matrix.mul_apply
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [torus, torusMatrix, Fin.sum_univ_two, phase_add, neg_add, mul_comm]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+MagHK/SpinGroup.lean:56:48: warning: This simp argument is unused:
+  Fin.sum_univ_two
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [torus, torusMatrix, Matrix.mul_apply, phase_add, neg_add, mul_comm]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+MagHK/SpinGroup.lean:56:77: warning: This simp argument is unused:
+  neg_add
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [torus, torusMatrix, Matrix.mul_apply, Fin.sum_univ_two, phase_add, mul_comm]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+
+Exit code 0
+
+Checking MagHK/MonopoleGeometry.lean
+Try this:
+  [apply] ring_nf
+  
+  The `ring` tactic failed to close the goal. Use `ring_nf` to obtain a normal form.
+    
+  Note that `ring` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead.
+MagHK/MonopoleGeometry.lean:106:10: warning: This simp argument is unused:
+  meridian
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [smul_smul, add_comm, neg_mul, smul_neg]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+MagHK/MonopoleGeometry.lean:106:50: warning: This simp argument is unused:
+  smul_neg
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [meridian, smul_smul, add_comm, neg_mul]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+MagHK/MonopoleGeometry.lean:99:43: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+MagHK/MonopoleGeometry.lean:99:79: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+MagHK/MonopoleGeometry.lean:107:2: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+MagHK/MonopoleGeometry.lean:136:6: warning: Unused tactic linter: `ring` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+MagHK/MonopoleGeometry.lean:136:6: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+
+Exit code 0
+
+Checking MagHK/SpinChart.lean
+MagHK/SpinChart.lean:48:25: warning: This simp argument is unused:
+  norm_div
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [unitPhase, hz, norm_norm, norm_ne_zero_iff.mpr hz]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+MagHK/SpinChart.lean:48:35: warning: This simp argument is unused:
+  norm_norm
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [unitPhase, hz, norm_div, norm_ne_zero_iff.mpr hz]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+MagHK/SpinChart.lean:56:20: warning: This simp argument is unused:
+  norm_mul
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [actionWave, gaugePhase_norm]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+MagHK/SpinChart.lean:61:24: warning: This simp argument is unused:
+  norm_mul
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [actionPairWave, gaugePhase_norm]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+
+Exit code 0
+
+Checking MagHK/MonopoleSphere.lean
+MagHK/MonopoleSphere.lean:23:0: warning: automatically included section variable(s) unused in theorem `MagHK.MonopoleSphere.normalize_isometry`:
+  [MeasurableSpace E]
+  [BorelSpace E]
+  [FiniteDimensional ℝ E]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [MeasurableSpace E] [BorelSpace E] [FiniteDimensional ℝ E] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+
+Exit code 0
+
+Checking MagHK/MonopoleQuadrature.lean
+
+Exit code 0
+
+Checking MagHK/MonopolePairLaw.lean
+MagHK/MonopolePairLaw.lean:83:49: warning: This simp argument is unused:
+  Complex.star_def
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [circle, MagHK.CylindricalOrbitals.phase, Complex.exp_mul_I, Complex.ofReal_cos, Complex.ofReal_sin]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+MagHK/MonopolePairLaw.lean:91:73: warning: This simp argument is unused:
+  map_mul
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [MagHK.MonopoleTrial.spinorPlus, MagHK.MonopoleTrial.spinorMinus]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+MagHK/MonopolePairLaw.lean:101:62: warning: This simp argument is unused:
+  real_inner_comm
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [direction, spherical, WithLp.ofLp_toLp, one_mul, RCLike.inner_apply, conj_trivial]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+MagHK/MonopolePairLaw.lean:104:71: warning: This simp argument is unused:
+  Complex.star_def
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [MagHK.MonopoleTrial.direction, Complex.mul_re, Complex.mul_im]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+
+Exit code 0
+
+Checking MagHK/SpinGeometry.lean
+MagHK/SpinGeometry.lean:93:19: warning: `if_neg` has been deprecated: Use `ite_eq_right` instead
+MagHK/SpinGeometry.lean:95:10: warning: Unused tactic linter: `ring` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+MagHK/SpinGeometry.lean:95:10: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+
+Exit code 0
+
+Checking MagHK/MonopoleFlux.lean
+MagHK/MonopoleFlux.lean:30:8: warning: Unused tactic linter: `ring` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+MagHK/MonopoleFlux.lean:30:8: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+
+Exit code 0
+
+Checking MagHK/WeakGauge.lean
+
+Exit code 0
+
+Checking MagHK/NoninteractingTheorem.lean
+
+Exit code 0
+
+Checking MagHK/CurrentCompletion.lean
+
+Exit code 0
+
+Checking MagHK/DiracString.lean
+
+Exit code 0
+
+Checking MagHK/MonopoleMultiplet.lean
+MagHK/MonopoleMultiplet.lean:70:6: warning: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+
+Exit code 0
+
+Checking MagHK/SeparatedDifferential.lean
+
+Exit code 0
+
+Checking MagHK/DoubletDeterminant.lean
+
+Exit code 0
+
+Checking MagHK/ExpPolynomialMoments.lean
+MagHK/ExpPolynomialMoments.lean:40:8: warning: `MeasureTheory.integrable_finset_sum` has been deprecated: Use `MeasureTheory.integrable_finsetSum` instead
+MagHK/ExpPolynomialMoments.lean:45:6: warning: `MeasureTheory.integral_finset_sum` has been deprecated: Use `MeasureTheory.integral_finsetSum` instead
+
+Exit code 0
+
+Checking MagHK/FunctionSpaces.lean
+MagHK/FunctionSpaces.lean:64:4: warning: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+MagHK/FunctionSpaces.lean:67:4: warning: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+MagHK/FunctionSpaces.lean:77:2: warning: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+MagHK/FunctionSpaces.lean:86:2: warning: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+MagHK/FunctionSpaces.lean:108:4: warning: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+
+Exit code 0
+
+Checking MagHK/GaussianGap.lean
+
+Exit code 0
+
+Checking MagHK/GaussianParameterBounds.lean
+
+Exit code 0
+
+Checking MagHK/GeneralGaugeShift.lean
+
+Exit code 0
+
+Checking MagHK/MagneticForms.lean
+MagHK/MagneticForms.lean:32:0: warning: automatically included section variable(s) unused in theorem `MagHK.MagneticForms.conjugate_involutive`:
+  [MeasurableSpace X]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [MeasurableSpace X] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+MagHK/MagneticForms.lean:44:0: warning: automatically included section variable(s) unused in theorem `MagHK.MagneticForms.conjugate_kineticDensity`:
+  [MeasurableSpace X]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [MeasurableSpace X] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+MagHK/MagneticForms.lean:74:0: warning: automatically included section variable(s) unused in theorem `MagHK.MagneticForms.conjugate_sameRay`:
+  [MeasurableSpace X]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [MeasurableSpace X] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+
+Exit code 0
+
+Checking MagHK/ManyBodyDensity.lean
+
+Exit code 0
+
+Checking MagHK/Poincare.lean
+
+Exit code 0
+
+Checking MagHK/WeakDifferential.lean
+MagHK/WeakDifferential.lean:110:13: warning: `ContinuousLinearMap.add_apply` has been deprecated: Use `add_apply` instead
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.add_apply` to `add_apply x`).
+MagHK/WeakDifferential.lean:110:44: warning: `ContinuousLinearMap.smul_apply` has been deprecated: Use `smul_apply` instead
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.smul_apply` to `smul_apply x`).
+MagHK/WeakDifferential.lean:118:2: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+
+Exit code 0
+
+Checking MagHK/MarginalSpaces.lean
+
+Exit code 0
+
+Checking MagHK/MonopolePatches.lean
+MagHK/MonopolePatches.lean:46:2: warning: Try `simp at hp` instead of `simpa using hp`
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+MagHK/MonopolePatches.lean:101:21: warning: Unused tactic linter: `ext t <;> congr 1` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+MagHK/MonopolePatches.lean:101:43: warning: Unused tactic linter: `ring` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+MagHK/MonopolePatches.lean:101:67: warning: Unused tactic linter: `ring` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+MagHK/MonopolePatches.lean:101:31: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+MagHK/MonopolePatches.lean:101:43: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+MagHK/MonopolePatches.lean:101:67: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+MagHK/MonopolePatches.lean:128:23: warning: This simp argument is unused:
+  coefficient
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [Pi.div_apply, Pi.mul_apply, Pi.add_apply, id_eq]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+MagHK/MonopolePatches.lean:128:36: warning: This simp argument is unused:
+  Pi.div_apply
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [coefficient, Pi.mul_apply, Pi.add_apply, id_eq]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+MagHK/MonopolePatches.lean:128:64: warning: This simp argument is unused:
+  Pi.add_apply
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [coefficient, Pi.div_apply, Pi.mul_apply, id_eq]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+MagHK/MonopolePatches.lean:128:78: warning: This simp argument is unused:
+  id_eq
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [coefficient, Pi.div_apply, Pi.mul_apply, Pi.add_apply]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+MagHK/MonopolePatches.lean:130:48: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+MagHK/MonopolePatches.lean:139:23: warning: This simp argument is unused:
+  coefficient
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [Pi.div_apply, Pi.mul_apply, Pi.add_apply, id_eq]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+MagHK/MonopolePatches.lean:139:36: warning: This simp argument is unused:
+  Pi.div_apply
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [coefficient, Pi.mul_apply, Pi.add_apply, id_eq]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+MagHK/MonopolePatches.lean:139:64: warning: This simp argument is unused:
+  Pi.add_apply
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [coefficient, Pi.div_apply, Pi.mul_apply, id_eq]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+MagHK/MonopolePatches.lean:139:78: warning: This simp argument is unused:
+  id_eq
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [coefficient, Pi.div_apply, Pi.mul_apply, Pi.add_apply]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+MagHK/MonopolePatches.lean:141:48: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+MagHK/MonopolePatches.lean:149:23: warning: This simp argument is unused:
+  coefficient
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [Pi.div_apply, Pi.mul_apply, Pi.add_apply, id_eq]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+MagHK/MonopolePatches.lean:149:36: warning: This simp argument is unused:
+  Pi.div_apply
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [coefficient, Pi.mul_apply, Pi.add_apply, id_eq]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+MagHK/MonopolePatches.lean:151:48: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+MagHK/MonopolePatches.lean:220:30: warning: This simp argument is unused:
+  smul_eq_mul
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [neg_neg, neg_sq]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+
+Exit code 0
+
+Checking MagHK/MonopolePatchGauge.lean
+
+Exit code 0
+
+Checking MagHK/MonopoleCartesianDifferential.lean
+
+Exit code 0
+
+Checking MagHK/MonopoleDifferential.lean
+MagHK/MonopoleDifferential.lean:252:15: warning: This simp argument is unused:
+  Complex.I_sq
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [hs4, hsq, htrig]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+MagHK/MonopoleDifferential.lean:251:12: warning: Unused tactic linter: `push_cast` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+MagHK/MonopoleDifferential.lean:251:22: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+MagHK/MonopoleDifferential.lean:251:47: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+MagHK/MonopoleDifferential.lean:251:59: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+MagHK/MonopoleDifferential.lean:252:46: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+MagHK/MonopoleDifferential.lean:289:19: warning: This simp argument is unused:
+  eq_self_iff_true
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [Fin.sum_univ_three, firstOrder, angularMu, angularPhi, angularValue, h10, h20, h21, ite_true,
+    ite_false]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+MagHK/MonopoleDifferential.lean:306:32: warning: This simp argument is unused:
+  hs6
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [Complex.I_sq, hs4, hsq, htrig]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+MagHK/MonopoleDifferential.lean:278:2: warning: Unused tactic linter: `change _ = angularExpression g Y p + (g ^ 2 : ℝ) * Y p` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+MagHK/MonopoleDifferential.lean:323:2: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+
+Exit code 0
+
+Checking MagHK/MonopoleCartesianOperator.lean
+
+Exit code 0
+
+Checking MagHK/MonopoleCoordinates.lean
+
+Exit code 0
+
+Checking MagHK/MonopoleTensorDomain.lean
+
+Exit code 0
+
+Checking MagHK/MonopoleObstruction.lean
+
+Exit code 0
+
+Checking MagHK/MonopoleExpectation.lean
+
+Exit code 0
+
+Checking MagHK/MonopoleCorrelation.lean
+
+Exit code 0
+
+Checking MagHK/MonopoleGround.lean
+
+Exit code 0
+
+Checking MagHK/MonopoleOccupied.lean
+
+Exit code 0
+
+Checking MagHK/MonopoleNonSlater.lean
+
+Exit code 0
+
+Checking MagHK/MonopoleCurrent.lean
+
+Exit code 0
+
+Checking MagHK/MonopoleCovariance.lean
+MagHK/MonopoleCovariance.lean:37:57: warning: `if_pos` has been deprecated: Use `ite_eq_left` instead
+MagHK/MonopoleCovariance.lean:37:57: warning: This simp argument is unused:
+  if_pos rfl
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [pairCurrent, pointCurrent, covariantVector, ite_true, Fin.sum_univ_three, Complex.mul_re,
+    Complex.conj_re, Complex.conj_im]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+MagHK/MonopoleCovariance.lean:50:19: warning: This simp argument is unused:
+  norm_mul
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [pairPhase, gaugePhase_norm]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+MagHK/MonopoleCovariance.lean:69:40: warning: Variable name `R` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _R
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+
+Exit code 0
+
+Checking MagHK/MonopoleFormCovariance.lean
+MagHK/MonopoleFormCovariance.lean:59:8: warning: `MeasureTheory.integrable_finset_sum` has been deprecated: Use `MeasureTheory.integrable_finsetSum` instead
+MagHK/MonopoleFormCovariance.lean:61:8: warning: `MeasureTheory.integrable_finset_sum` has been deprecated: Use `MeasureTheory.integrable_finsetSum` instead
+MagHK/MonopoleFormCovariance.lean:91:8: warning: `MeasureTheory.integral_finset_sum` has been deprecated: Use `MeasureTheory.integral_finsetSum` instead
+MagHK/MonopoleFormCovariance.lean:94:10: warning: `MeasureTheory.integral_finset_sum` has been deprecated: Use `MeasureTheory.integral_finsetSum` instead
+MagHK/MonopoleFormCovariance.lean:105:12: warning: `MeasureTheory.integrable_finset_sum` has been deprecated: Use `MeasureTheory.integrable_finsetSum` instead
+
+Exit code 0
+
+Checking MagHK/MonopoleSinglet.lean
+
+Exit code 0
+
+Checking MagHK/MonopoleRayleigh.lean
+
+Exit code 0
+
+Checking MagHK/MonopoleRotationPotential.lean
+
+Exit code 0
+
+Checking MagHK/MonopolePositive.lean
+
+Exit code 0
+
+Checking MagHK/MonopoleTimeReversal.lean
+
+Exit code 0
+
+Checking MagHK/MonopoleInverse.lean
+
+Exit code 0
+
+Checking MagHK/MonopoleCurrentAveraging.lean
+
+Exit code 0
+
+Checking MagHK/MonopoleStationarity.lean
+MagHK/MonopoleStationarity.lean:70:10: warning: `if_pos` has been deprecated: Use `ite_eq_left` instead
+MagHK/MonopoleStationarity.lean:73:42: warning: `if_pos` has been deprecated: Use `ite_eq_left` instead
+MagHK/MonopoleStationarity.lean:76:10: warning: `if_neg` has been deprecated: Use `ite_eq_right` instead
+MagHK/MonopoleStationarity.lean:79:42: warning: `if_neg` has been deprecated: Use `ite_eq_right` instead
+MagHK/MonopoleStationarity.lean:73:42: warning: This simp argument is unused:
+  if_pos rfl
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [RCLike.inner_apply', hp, ite_true, multiplierFlux, radialFluxComponent]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+
+Exit code 0
+
+Checking MagHK/MonopoleCurrentTest.lean
+
+Exit code 0
+
+Checking MagHK/RadialCurrent.lean
+
+Exit code 0
+
+Checking MagHK/MonopoleCurrentZero.lean
+
+Exit code 0
+
+Checking MagHK/MonopoleFlow.lean
+
+Exit code 0
+
+Checking MagHK/MonopoleWeakFlux.lean
+MagHK/MonopoleWeakFlux.lean:60:8: warning: Unused tactic linter: `ring` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+MagHK/MonopoleWeakFlux.lean:60:8: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+
+Exit code 0
+
+Checking MagHK/MonopoleCurrentConclusion.lean
+
+Exit code 0
+
+Checking MagHK/MonopoleCounterexample.lean
+
+Exit code 0
+
+Checking MagHK/MonopoleCurrentBound.lean
+
+Exit code 0
+
+Checking MagHK/MonopoleDensity.lean
+
+Exit code 0
+
+Checking MagHK/MonopoleEndpointDomains.lean
+
+Exit code 0
+
+Checking MagHK/MonopoleEndpointAsymptotics.lean
+
+Exit code 0
+
+Checking MagHK/MonopoleGlobalPotential.lean
+
+Exit code 0
+
+Checking MagHK/MonopoleHardy.lean
+
+Exit code 0
+
+Checking MagHK/MonopoleTransition.lean
+
+Exit code 0
+
+Checking MagHK/MonopolePairTransition.lean
+
+Exit code 0
+
+Checking MagHK/MonopoleParamagnetic.lean
+MagHK/MonopoleParamagnetic.lean:42:8: warning: This simp argument is unused:
+  Fin.sum_univ_three
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [component, connection, smul_smul]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+MagHK/MonopoleParamagnetic.lean:154:23: warning: Unused tactic linter: `ring` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+MagHK/MonopoleParamagnetic.lean:154:23: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+MagHK/MonopoleParamagnetic.lean:202:4: warning: Unused tactic linter: `change
+  density P.minus_form P.minus_form_state x = density P.plus_form P.plus_form_state x` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+
+Exit code 0
+
+Checking MagHK/MonopoleRadialIsometry.lean
+MagHK/MonopoleRadialIsometry.lean:26:6: warning: Unused tactic linter: `ring` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+MagHK/MonopoleRadialIsometry.lean:26:6: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+MagHK/MonopoleRadialIsometry.lean:57:8: warning: Unused tactic linter: `ring` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+MagHK/MonopoleRadialIsometry.lean:57:8: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+
+Exit code 0
+
+Checking MagHK/MonopoleRadiality.lean
+MagHK/MonopoleRadiality.lean:19:2: warning: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+MagHK/MonopoleRadiality.lean:38:2: warning: Try `simp at h` instead of `simpa using h`
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+MagHK/MonopoleRadiality.lean:44:37: warning: Variable name `hx` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hx
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+
+Exit code 0
+
+Checking MagHK/MonopoleSubmission.lean
+
+Exit code 0
+
+Checking MagHK/OneParticle.lean
+
+Exit code 0
+
+Checking MagHK/OneParticleWeak.lean
+
+Exit code 0
+
+Checking MagHK/OneParticleCurl.lean
+MagHK/OneParticleCurl.lean:75:8: warning: Unused tactic linter: `ring` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+MagHK/OneParticleCurl.lean:75:8: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+MagHK/OneParticleCurl.lean:169:22: warning: This simp argument is unused:
+  fderiv_const
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [dCoord]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+
+Exit code 0
+
+Checking MagHK/OneParticleTheorem.lean
+MagHK/OneParticleTheorem.lean:24:2: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+
+Exit code 0
+
+Checking MagHK/OneParticleContinuity.lean
+
+Exit code 0
+
+Checking MagHK/OperatorPreliminaries.lean
+
+Exit code 0
+
+Checking MagHK/OrderingTheorem.lean
+
+Exit code 0
+
+Checking MagHK/ParamagneticDiscussion.lean
+
+Exit code 0
+
+Checking MagHK/PassiveSpin.lean
+
+Exit code 0
+
+Checking MagHK/PassiveSpinCounterexample.lean
+
+Exit code 0
+
+Checking MagHK/PlanarEndpointAsymptotics.lean
+
+Exit code 0
+
+Checking MagHK/PotentialAsymptotics.lean
+
+Exit code 0
+
+Checking MagHK/PotentialSpaceIdentification.lean
+
+Exit code 0
+
+Checking MagHK.lean
+
+Exit code 0
+
+Checking Audit.lean
+AUDIT_MODULES MagHK.AngularIntegral,MagHK.Axial,MagHK.Ordering,MagHK.OperatorSpectrum,MagHK.AxialRealization,MagHK.BanachDuality,MagHK.Noninteracting,MagHK.ParameterContinuity,MagHK.NormLimits,MagHK.NormContinuity,MagHK.Slater,MagHK.CylindricalOrbitals,MagHK.RadialRealization,MagHK.RadialEndpoints,MagHK.PotentialInfinity,MagHK.PartnerAsymptotics,MagHK.SecondOrbital,MagHK.OrbitalDomains,MagHK.BoundedRealization,MagHK.Cartesian,MagHK.CartesianOrbitals,MagHK.Curvature,MagHK.ConstructionData,MagHK.ConcreteSlater,MagHK.CoordinateLaplacian,MagHK.CoordinateMagnetic,MagHK.Monopole,MagHK.Correlation,MagHK.PlanarSpectralLibrary,MagHK.TensorRealization,MagHK.FermionRealization,MagHK.TimeReversal,MagHK.OperatorTimeReversal,MagHK.GaussianNormalization,MagHK.GaussianIntegrals,MagHK.GaussianAxial,MagHK.GaussianDomains,MagHK.GaussianRealization,MagHK.GaussianPlanar,MagHK.GaussianOrbitals,MagHK.GaussianSlater,MagHK.GaussianFermion,MagHK.CounterexamplePair,MagHK.MonopoleOrbital,MagHK.MonopoleTrial,MagHK.MonopoleHilbert,MagHK.MonopoleRadial,MagHK.MonopoleRadialDomain,MagHK.MonopoleAngular,MagHK.OperatorCompactness,MagHK.MonopoleRealization,MagHK.ManyBodyTimeReversal,MagHK.GeneralGauge,MagHK.GeneralGaugeWeak,MagHK.GaussianCompactness,MagHK.PotentialSpaces,MagHK.GaussianOutside,MagHK.Symmetry,MagHK.SpinGroup,MagHK.MonopoleGeometry,MagHK.SpinChart,MagHK.MonopoleSphere,MagHK.MonopoleQuadrature,MagHK.MonopolePairLaw,MagHK.SpinGeometry,MagHK.MonopoleFlux,MagHK.WeakGauge,MagHK.NoninteractingTheorem,MagHK.CurrentCompletion,MagHK.DiracString,MagHK.MonopoleMultiplet,MagHK.SeparatedDifferential,MagHK.DoubletDeterminant,MagHK.ExpPolynomialMoments,MagHK.FunctionSpaces,MagHK.GaussianGap,MagHK.GaussianParameterBounds,MagHK.GeneralGaugeShift,MagHK.MagneticForms,MagHK.ManyBodyDensity,MagHK.Poincare,MagHK.WeakDifferential,MagHK.MarginalSpaces,MagHK.MonopolePatches,MagHK.MonopolePatchGauge,MagHK.MonopoleCartesianDifferential,MagHK.MonopoleDifferential,MagHK.MonopoleCartesianOperator,MagHK.MonopoleCoordinates,MagHK.MonopoleTensorDomain,MagHK.MonopoleObstruction,MagHK.MonopoleExpectation,MagHK.MonopoleCorrelation,MagHK.MonopoleGround,MagHK.MonopoleOccupied,MagHK.MonopoleNonSlater,MagHK.MonopoleCurrent,MagHK.MonopoleCovariance,MagHK.MonopoleFormCovariance,MagHK.MonopoleSinglet,MagHK.MonopoleRayleigh,MagHK.MonopoleRotationPotential,MagHK.MonopolePositive,MagHK.MonopoleTimeReversal,MagHK.MonopoleInverse,MagHK.MonopoleCurrentAveraging,MagHK.MonopoleStationarity,MagHK.MonopoleCurrentTest,MagHK.RadialCurrent,MagHK.MonopoleCurrentZero,MagHK.MonopoleFlow,MagHK.MonopoleWeakFlux,MagHK.MonopoleCurrentConclusion,MagHK.MonopoleCounterexample,MagHK.MonopoleCurrentBound,MagHK.MonopoleDensity,MagHK.MonopoleEndpointDomains,MagHK.MonopoleEndpointAsymptotics,MagHK.MonopoleGlobalPotential,MagHK.MonopoleHardy,MagHK.MonopoleTransition,MagHK.MonopolePairTransition,MagHK.MonopoleParamagnetic,MagHK.MonopoleRadialIsometry,MagHK.MonopoleRadiality,MagHK.MonopoleSubmission,MagHK.OneParticle,MagHK.OneParticleWeak,MagHK.OneParticleCurl,MagHK.OneParticleTheorem,MagHK.OneParticleContinuity,MagHK.OperatorPreliminaries,MagHK.OrderingTheorem,MagHK.ParamagneticDiscussion,MagHK.PassiveSpin,MagHK.PassiveSpinCounterexample,MagHK.PlanarEndpointAsymptotics,MagHK.PotentialAsymptotics,MagHK.PotentialSpaceIdentification,MagHK
+AUDIT PASSED. 2043 theorems and 966 definitions.
+Only propext, Classical.choice and Quot.sound are allowed.
+Explicit theorem hypotheses are not discharged by this audit.
+
+Exit code 0

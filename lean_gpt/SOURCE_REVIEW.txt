@@ -1,0 +1,86 @@
+October 2026 final submission correspondence review
+
+The target is ../submission-Oct2026/LaestadiusCsirik_HK.tex.
+Its current SHA-256 is
+
+38512b4e9b467fb6f6e94805c65e287927f43868f63df65e0abf395250943a0d
+
+The incremental baseline is repository commit 9b2870c and manuscript hash
+0338c9a1017ff9e7e8629c57f500dc8e790ae970514afa74daf5f68dba10603c.
+The earlier complete review and report are preserved in
+history/2026-10-19T053931Z. Three independent section reviews compared the
+complete subsequent manuscript diff with the actual Lean objects and
+explicit hypotheses. This is a separate correspondence review, not a
+consequence of passing the Lean axiom audit.
+
+Preliminaries and one-particle proposition
+
+The statements, regularity argument, continuity equation and time-reversal
+proof are unchanged. The reconstruction display now has the label
+eq:one-particle-reconstruction and equation number 8. Its formulas are
+unchanged, with references replacing positional descriptions. The scalar
+and weak-curl calculations remain in OneParticleWeak, OneParticle and
+OneParticleCurl, and the assembled conclusions in OneParticleTheorem.
+The formal proof uses equivalent real and imaginary weak-derivative
+calculations rather than literally constructing every local polar phase.
+The previously documented elliptic, unique-continuation and current-domain
+inputs remain essential and unchanged.
+
+Noninteracting constructions and planar appendix
+
+The potentials, parameters, orbitals, normalization, spectrum and gaps are
+unchanged. The clarified Kohn-Sham remark follows from
+NoninteractingTheorem.bounded_counterexample and
+CounterexamplePair.PairedGroundStates, with a common scalar potential,
+equal densities, zero currents and gauge-inequivalent vector potentials.
+The references to the radial operator and the ordering lemma now explicitly
+identify the equations and lemma already represented in Lean.
+
+The q and f smoothness formulas were moved into an unnumbered display.
+The final sentence now explicitly refers to the orbital and vector-potential
+expressions. It does not assert Cartesian smoothness of q(r) alone at zero.
+This resolves an existing prose ambiguity without altering the construction.
+The standalone ordering result retains the documented closed-quadratic-form
+interpretation, locally integrable coefficients and standard radial and
+direct-sum library inputs. No new background hypothesis was introduced.
+
+Monopole construction and appendix
+
+The theorem and its proof formulas are unchanged. The singular vector
+potential terminology agrees with DiracString.outside_vector_sum and its
+null-set extension. The revised smooth-replacement explanation uses the
+zero-flux obstruction. MonopoleGlobalPotential.closed_sphere_integral is
+stated on the unit sphere. The corresponding statement for other spheres
+follows by affine pullback, but an explicit general-radius wrapper is not
+present. The obstruction actually needed here is directly proved by
+no_global_potential. This correspondence is recorded as an interpretation
+in coverage-review.json rather than as a new compiled theorem.
+
+The spectrum reference now identifies the proof of the domain lemma.
+The correlation argument now explicitly distinguishes angular irreducible
+representations from their radial multiplicities. This matches
+MonopoleMultiplet.StandardIsotypicLibrary and common_radial_doublet.
+The endpoint, Coulomb, spectral-gap and current arguments and all their
+standard background libraries are unchanged.
+
+Editorial material and exact snapshot
+
+The funding line, appendix headings, shortened appendix title and contextual
+cross-references do not change mathematical claims. Both embedded figures
+match the original input sources after newline normalization. Schematic
+figures, bibliography, historical and editorial assertions remain outside
+formal coverage. The public-availability footnote retains the intended
+ERC-REGAL/mag_hk tag v1 and becomes accurate when that repository and tag
+are public. Repository availability is not a Lean theorem.
+
+The new numbered reconstruction equation shifts the margin and angular
+determinant references to equations 23 and 31. Release documentation must
+use these numbers or stable LaTeX labels.
+
+All 141 Lean source files have been restored to LF line endings and have
+exactly the raw SHA-256 hashes of the earlier passing Git snapshot.
+No Lean proof or explicit background assumption was changed. Scoped Git
+attributes preserve LF bytes on subsequent checkouts. The manuscript hash
+above includes the final smoothness clarification and both embedded figures.
+The historical review is retained rather than silently reassigned to this
+new manuscript. verification.json records the independent compiler result.

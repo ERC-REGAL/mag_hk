@@ -1,0 +1,25 @@
+October submission verification complete
+
+The Lean formalization targets
+../submission-Oct2026/LaestadiusCsirik_HK.tex.
+
+All 141 Lean sources have passing compiler results. The final axiom audit,
+coverage matching and source-consistency checks passed. No proof or
+verification work remains within the scope and interpretations recorded
+in COVERAGE.txt. LAST_RUN.txt and verification.json record the result.
+
+The previously allowed standard background theorems remain explicit inputs,
+as detailed in ASSUMPTIONS.txt. They have not been derived from first
+principles here. The current-domain, closed-form and representative
+interpretations remain part of the formal statements.
+
+To reproduce a fresh full run from this directory, use
+
+    python3 verify.py
+
+To reuse unchanged checked artifacts, use
+
+    python3 verify.py --reuse-checked
+
+Future mathematical changes to the manuscript or Lean sources require a
+new correspondence review and verification run.

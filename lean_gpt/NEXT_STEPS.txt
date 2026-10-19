@@ -1,0 +1,22 @@
+Verification complete for the frozen submission snapshot
+
+All 141 Lean sources have passing results from a fresh full run.
+The axiom audit, source-consistency checks and coverage matching passed.
+LAST_RUN.txt and verification.json record the completed result.
+No proof or verification work remains within the scope and interpretations
+recorded in COVERAGE.txt and ASSUMPTIONS.txt.
+
+The manuscript is ../submission-Oct2026/LaestadiusCsirik_HK.tex.
+Keep that file and the Lean sources at the bytes recorded in verification.json
+when identifying this verified submission snapshot.
+
+To reproduce a fresh full run from lean_gpt, use
+    python verify.py --jobs 1
+
+To reuse unchanged checked local artifacts, use
+    python verify.py --jobs 1 --reuse-checked
+
+See README.txt for the pinned dependency setup. Future manuscript or Lean
+source changes require an updated correspondence review and verification
+record. The formalization remains relative to the documented standard
+background hypotheses. They have not all been derived from first principles.

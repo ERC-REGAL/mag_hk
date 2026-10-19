@@ -1,0 +1,3 @@
+* text=auto eol=lf
+verification.json -text
+verification.log -text

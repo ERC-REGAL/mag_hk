@@ -1,0 +1,85 @@
+Relative operator realization audit
+
+The operator-theory inputs are propositions passed as theorem arguments.
+There are no axiom declarations or supplied instances of these propositions.
+The concrete function calculations and their applications are proved in Lean.
+
+OperatorSpectrum.lean
+  Spectrum is defined by failure of an actual bounded two-sided inverse on
+  the actual operator domain. Multiplicity is the complex dimension of the
+  actual eigenspace. SelfAdjoint includes dense domain, complex scalar closure,
+  complex linearity, and equality with the Hilbert adjoint graph.
+
+RadialRealization.lean
+  StandardRadialFacts supplies general weighted Friedrichs realization,
+  weak-derivative and form identities, positive-solution ground transform,
+  nonnegative multiplier form comparison, closed first-order product domains,
+  partner form identity, and half-line Sturm eigenspace simplicity.
+  The endpoint assumptions are visible in CoefficientConditions. They include
+  the transformed partner 3/(4r^2)+O(1) endpoint and a tail lower bound.
+  RegularSolution includes actual second derivatives, actual finite form
+  energy, bounded behavior at zero, actual Lp representation, and positive
+  mass. The concrete bounded and Gaussian solutions satisfy these conditions.
+  C-infinity compactly supported tests use ContDiff order infinity, not top.
+
+PlanarSpectralLibrary.lean
+  StandardPlanarLibrary constructs simultaneous radial and planar realizations
+  for arbitrary smooth azimuthal Cartesian coefficients with bounded vector
+  potential. Its decaying branch consumes actual a -> 0 and v -> threshold.
+  Its confining branch consumes actual v -> infinity.
+  It supplies the general polar Fourier action and isometry, direct-sum
+  eigenspace facts, and Weyl or compact-resolvent discreteness statements.
+  These are the standard operator-theory assumptions permitted by the user.
+  The bounded threshold application is proved with threshold 441/4.
+  The Gaussian confining application is in GaussianPlanar.lean.
+  Neither library branch assumes the manuscript's first two levels.
+
+AxialRealization.lean
+  StandardAxialLibrary supplies general full-line realization, Sturm
+  simplicity, nonzero spectral correspondence for first-order products, and
+  the free constant-potential spectrum. The explicit sech ground state,
+  normalization, finite energy, constant partner and gap c^2 are proved.
+  The spectrum and multiplicity metadata are identified with OperatorSpectrum
+  definitions, and both operators have explicit selfadjoint graph properties.
+
+TensorRealization.lean
+  StandardTensorLibrary supplies the universal selfadjoint tensor-sum theorem.
+  Inputs include the actual smooth coefficient conditions for both factors.
+  Output includes compactly supported test functions in the operator domain
+  with the literal three-dimensional differential action, a weak equation,
+  the actual spectrum sum, and the general unique-sum dimension formula.
+  Its separated-function law is quantified over arbitrary energies, radial
+  and axial eigenstates, scalar multiples and literal product representatives.
+  Both manuscript Cartesian orbitals are identified with those representatives
+  using their proved cylindrical pullback formulas. This identification is
+  a proof, not a premise that the selected orbitals are eigenfunctions.
+  For c^2 > 20, exact simple levels 0 and 20 and a strict upper gap follow.
+
+FermionRealization.lean
+  The state space is the actual kernel of swap+identity in Lebesgue L2 on
+  two copies of complex-plane times real-line configuration space.
+  StandardFermionLibrary is the general exterior-square filling theorem for
+  arbitrary isolated simple first two levels and arbitrary orthonormal
+  eigenfunctions. It includes a selfadjoint operator on this antisymmetric
+  space, its literal differential sum action on smooth compact tests, and
+  its weak differential equation. The general filling theorem is external
+  permitted operator theory, not a theorem proved from mathlib here.
+  The bounded_ground_state application uses the actual IVT-selected parameter,
+  actual Cartesian eigenfunctions, actual orthonormality, and the literal
+  determinant from ConcreteSlater. Its ground energy is 20 and its eigenspace
+  has complex dimension one and is isolated. The general exterior filling
+  theorem returns this isolation from the assumed one-body gap.
+  Normalization, positive density, and vanishing
+  physical current are all part of the conclusion.
+  The bounded_example wrapper fixes c=5 and adds actual smoothness, global
+  bounds, and nonzero planar curl at the same parameter t.
+
+Scope
+  These files verify the bounded +A noninteracting realization relative to
+  the explicitly stated general operator-theory library propositions.
+  They do not assert that mathlib itself already provides these libraries.
+  The final theorem here does not assemble complex-conjugation covariance
+  for the -A partner, the Gaussian three-dimensional exterior-power theorem,
+  or the interacting monopole Hamiltonian. Those assemblies are provided by
+  NoninteractingTheorem and MonopoleCounterexample. See the project-wide
+  COVERAGE.txt and ASSUMPTIONS.txt for their proof chains and trust boundary.

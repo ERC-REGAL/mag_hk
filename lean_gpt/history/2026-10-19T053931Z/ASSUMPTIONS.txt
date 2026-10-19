@@ -1,0 +1,361 @@
+Background assumptions and trust boundary
+
+The user permits well-known operator theory, elliptic regularity and unique
+continuation. General results in those areas appear as explicit Lean theorem
+parameters. They are not silently installed instances or new Lean axioms.
+The conclusions are relative to these stated background facts. The axiom
+audit does not discharge theorem parameters.
+
+Read the named definitions for their exact quantifiers and hypotheses. The
+state spaces, forms, differential expressions, spectra and marginal integrals
+are literal mathematical objects. Spectrum means failure of a bounded two-sided
+resolvent. Selfadjointness means equality with the Hilbert adjoint graph.
+
+One-particle weak PDE
+
+WeakDifferential.StandardWeakOperatorLibrary gives integration by parts,
+restriction, linearity, C1 multiplication, almost-everywhere replacement and
+uniqueness for actual local distributional derivatives. Reconstruction's
+product and quotient calculations are then proved.
+
+OneParticleWeak.StandardEllipticLibrary gives C1 representatives, weak
+Hessians, their symmetry and the almost-everywhere strong PDE for H1_loc
+weak solutions with C1 vector and continuous scalar potentials. It does not
+assert a continuous Hessian. StandardUCPLibrary gives almost-everywhere
+nonvanishing under the same conditions. Neither reconstruction nor current
+rigidity is an input.
+
+Noninteracting operator theory
+
+RadialRealization.StandardRadialLibrary supplies Friedrichs realization on
+actual L2(r dr), Sturm simplicity, ground-state transformation, closed-form
+comparison and the D*D/DD* domain identities. Both examples' coefficient,
+endpoint, equation and finite-energy hypotheses are checked. The scalar
+cutoff estimate is not claimed to prove the entire graph-core theorem.
+
+PlanarSpectralLibrary.StandardPlanarLibrary supplies polar Fourier
+decomposition, planar/radial realization and Weyl and compactness theorems.
+Their Cartesian coefficient and asymptotic hypotheses are checked.
+
+AxialRealization.StandardAxialLibrary supplies full-line Sturm and
+supersymmetric spectral facts and the constant-potential spectrum.
+GaussianAxial.StandardOscillatorLibrary supplies the general oscillator
+realization and spectrum. Actual normalized axial orbitals, equations and
+finite energy are checked.
+
+TensorRealization.StandardTensorLibrary and
+FermionRealization.StandardFermionLibrary supply tensor-sum and exterior-square
+realization and spectral filling, uniformly in the coefficients and energies.
+Both actual Cartesian orbitals and determinants are connected to those
+operators. GaussianCompactness.StandardConfiningLibrary supplies compactness
+from quadratic confinement. The required actual coercive bound is proved.
+CompactResolvent uses an actual compact bounded two-sided inverse.
+
+Time reversal
+
+OperatorTimeReversal.StandardAntiunitaryLibrary transports selfadjointness,
+spectrum and multiplicity under actual Cartesian L2 conjugation. The KHK
+map and inverse-image domain, differential covariance and physical marginal
+formulas are proved.
+
+ManyBodyTimeReversal.StandardClosedFormLibrary and StandardAntiunitaryLibrary
+supply the general-N versions for actual shifted Friedrichs forms with real
+fields. The finite-kinetic-energy current statement uses actual L2 weak magnetic
+momenta. Arbitrary semibounded total forms need not control separate kinetic
+energy when the scalar potential has critical negative singularities.
+For example, the critical inverse-square oscillator has a Friedrichs ground
+state proportional to r^(-1/2) exp(-r^2/2), outside the kinetic H1 space.
+Thus a general current transport statement is interpreted where its displayed
+currents are defined. A separate generic kinetic-control estimate is needed
+to extract L2 magnetic momenta from a total form domain. No implication from
+semiboundedness alone is assumed.
+
+Monopole realization and perturbation
+
+MonopoleRealization.StandardMonopoleLibrary combines the all-charge monopole
+harmonic decomposition with the singular radial oscillator theorem. It
+identifies the operator graph with the displayed magnetic Friedrichs form,
+its shell spectrum and isolated-shell multiplicities. It also realizes
+finite-energy separated solutions. The actual lowest angular and radial
+equations, endpoint bounds and energy integrability are checked.
+
+Sections are represented in a conull spherical chart L2 model. The actual
+north/south transition laws for one and two particles are proved separately.
+The Hilbert representation does not require an additional selected-state
+patch-gluing assumption. The all-charge one-body spectrum remains an explicit
+standard operator theorem, rather than a derivation from mathlib alone.
+
+The angular input is the Wu-Yang harmonic theorem for integer twice-charge.
+The convention -i grad + A reverses the usual -i grad - A charge sign. The
+radial oscillator theorem is separate Sturm-Liouville theory. Angular reference
+https://doi.org/10.1016/0550-3213(76)90143-7
+
+MonopoleRealization.StandardExteriorLibrary supplies filling for any
+2-dimensional lowest one-particle eigenspace. StandardCoulombFormLibrary is
+the uniform magnetic Hardy/diamagnetic infinitesimal form bound for the literal
+Coulomb multiplier. StandardPositivePerturbationLibrary supplies KLMN,
+compactness and the first two min-max inequalities for arbitrary nonnegative
+symmetric infinitesimal form perturbations. The desired gap and simplicity
+are deduced from the proved trial integral, not assumed.
+
+MagneticFormFacts specifies the actual form closure and closed weak momenta,
+the operator representation identity, multiplier product rule and particle
+exchange. It has no selected-state continuity equation, zero-current or
+symmetry conclusion.
+
+MonopoleTensorDomain.StandardCoulombOperatorLibrary is the uniform magnetic
+Hardy/Kato-Rellich operator-domain identity. StandardSeparatedDomainLibrary is
+the nonnegative tensor-sum domain theorem in an arbitrary common angular
+eigenspace. Its actual separated image is combined with the interacting
+eigen-equation. The angular obstruction to a Slater state is proved.
+
+Angular momentum and symmetry
+
+Spin.StandardUnitaryDiagonalization is the finite-dimensional unitary
+spectral theorem with determinant-one basis change. Triviality of SU(2)'s
+one-dimensional characters is proved from explicit torus and flip matrices.
+
+SpinChart.StandardAngularMomentumLibrary is unitary integration of covariant
+angular momentum for every integer charge. It includes the literal local
+gauge-pullback representation, SU(2) covering of proper rotations and chart
+measure preservation. Spinor reconstruction and the actual spatial-coordinate
+identity are proved separately.
+
+MonopoleMultiplet.StandardIsotypicLibrary is the general monopole harmonic
+isotypic decomposition with radial multiplicity spaces for every finite
+invariant subspace. The rank-two common-radial conclusion, occupied-space
+invariance and determinant factorization are proved, not assumed.
+
+MonopoleCovariance.StandardMagneticActionLibrary is the uniform weak covariant
+derivative transformation and form-domain closure theorem for the actual
+gauge pullback. It ranges over all form vectors and invariant real potentials.
+Current covariance and form-energy invariance are deduced. The literal
+Coulomb potential's rotation invariance is proved.
+
+MonopoleRayleigh.StandardRayleighEqualityLibrary is the equality case of the
+bottom Rayleigh bound for the actual Friedrichs form. It requires a spectral
+lower bound and equality of form energy with E times squared norm. The
+rotated-ground-state application and singlet conclusion are proved.
+
+MonopoleCurrentZero.StandardDistributionKernelLibrary is the general
+zero-distributional-derivative kernel theorem on open connected intervals.
+The actual radial test identity is derived from the eigenform separately.
+
+MonopoleTimeReversal.StandardAntiunitaryLibrary and
+StandardFriedrichsConjugationLibrary supply uniform spectral and form transport
+for opposite charge. Actual conjugation, its inverse-image domain, transition
+phases, local differential/form covariance, Slater equivalence, density
+preservation and current sign reversal are proved separately.
+
+Monopole endpoint appendix
+
+MonopoleEndpointDomains.StandardSingularOscillatorLibrary supplies the general
+nonnegative-coefficient singular oscillator endpoint classification, maximal
+and Friedrichs domains, principal Wronskian boundary condition and normalized
+Laguerre spectral resolution. StandardAngularEndpointLibrary is the all-charge
+regular harmonic resolution and direct-sum adjoint-domain theorem. The
+q=+/-1 thresholds and total deficiency indices (2,2) are deduced.
+
+The minimal operator core uses regular harmonics and compact radial factors,
+so it omits only the origin. The polar-axis cutoff core is used for the
+Friedrichs form, not for the minimal operator. StandardFormDomainLibrary is
+KLMN equality of the literal closed form domains, instantiated at Coulomb.
+
+Weak gauges
+
+WeakGauge.StandardGradientRegularityLibrary is the general regularity
+statement for a locally integrable distribution whose weak gradient equals
+a prescribed C1 vector field on an open set. It yields a C2 primitive of
+that field. Mixed-partial symmetry then gives the actual gauge obstructions.
+It applies to all such fields, not only the constructed examples.
+
+L1 rotation averaging
+
+MonopoleCurrentAveraging.StandardRotationFixedSpaceLibrary is the general
+fixed-subspace theorem for the proper rotation action on arbitrary L1
+Euclidean vector fields. AE rotation equivariance yields a measurable radial
+coefficient with locally integrable weighted radial flux. It does not assume
+stationarity, vanishing current or any selected wavefunction. The stationary
+weak test equation and the zero-current conclusion are separately proved.
+No specialized continuity or differentiability premise for monopole-Coulomb
+marginal currents is used in the final proof.
+
+Radial restriction
+
+MonopoleEndpointDomains.StandardRadialReductionLibrary identifies the actual
+radial graph and action within any fixed monopole harmonic of the same
+one-particle Friedrichs operator. It uses the literal u(r)Y(omega)/r
+embedding. This prevents the endpoint appendix from describing an unrelated
+operator that merely has the same eigenvalues.
+
+Smooth gauge covariance
+
+GeneralGauge.StandardPhaseMultiplierLibrary gives actual unitary multiplication
+by the displayed symmetric unimodular phase on fermionic L2. The separate
+StandardUnitaryFormLibrary transports a Friedrichs integral form and spectrum
+under that unitary, requiring the concrete form identity as an argument.
+The phase, momentum and integral-form identities are proved in the module.
+
+Function spaces
+
+FunctionSpaces.StandardInterpolationLibrary is general Lp interpolation for
+0<p<=r<=q. The strict positive endpoint is essential on infinite measure
+spaces. The concrete products use mathlib Holder estimates, and the vector
+square decomposition is proved directly by splitting where the L3 summand
+has norm greater than one.
+
+MarginalSpaces.StandardSobolevLibrary is the dimension-three Sobolev
+embedding for arbitrary Hilbert-valued H1 maps. StandardSlicingLibrary is
+the general Fubini unitary identification of L2 functions with L2-valued
+slices, intertwining the actual weak gradient operators. The displayed
+marginal formulas, norm-square and inner-product estimates, density mass,
+and resulting Lp memberships are proved rather than assumed.
+
+BanachDuality.StandardLpDualityLibrary is the usual Radon-Nikodym
+representation of bounded functionals on Lp for 1<=p<infinity on sigma-finite
+measure spaces, including the L1/L-infinity endpoint. The intersection is
+an actual diagonal subspace of L1 times Lp. Mathlib's Hahn-Banach theorem,
+the Lp representation input and literal integral pairings yield the dual
+sum space. The proof includes the reverse map and uniqueness modulo AE
+equality, followed by the concrete exponents and finite current product.
+
+Geometric exclusions
+
+DiracString and MonopoleGlobalPotential use only proved mathlib results.
+The first proves the literal nonzero string potential lies outside the
+vector sum space, also after arbitrary null-set modifications. The second
+derives the closed-sphere curl integral from the rectangle divergence
+theorem and explicitly cancels periodic and polar boundaries. It excludes
+a C1 global potential on punctured three-space for any nonzero charge.
+No external Stokes or topological-obstruction premise is introduced.
+
+Exact domain and essential-spectrum supplements
+
+OperatorPreliminaries.StandardKatoRellichLibrary is the general bounded
+coefficient form/operator-domain theorem, with actual weak H1/H2 spaces and
+the form-norm completion of the same operator graph. StandardWeylLibrary
+provides the general decaying-coefficient Weyl theorem, tensor essential
+spectrum theorem and constant-partner point-spectrum law. Concrete bounds,
+decay, divergence and spectral thresholds are supplied by the construction.
+The essential spectrum is the actual bounded-resolvent spectrum with its
+isolated finite-dimensional eigenvalues removed.
+
+MonopoleHardy.StandardMagneticHardyLibrary is the general relative-coordinate
+magnetic Hardy inequality for arbitrary form vectors, giving actual L2
+membership of the inverse-distance multiplier and squared norm at most
+twice the sum of magnetic kinetic energies. The literal integral version,
+Cauchy-Schwarz bound and explicit Young constant 1/(2 epsilon) are derived.
+This input is separate from the min-max estimate and assumes no selected
+state, spectral gap or correlation conclusion.
+
+GeneralGaugeShift proves scalar-shift resolvent, eigenspace, multiplicity,
+selfadjoint and Friedrichs transport without any new background library.
+GeneralGaugeWeak proves the weak gauge product rule by using real and
+imaginary compact tests in the actual distributional momentum definition.
+Its current phase cancellation also adds no background library.
+
+Read this inventory together with COVERAGE.txt and LAST_RUN.txt. A successful
+axiom audit alone does not mean that the external background theories have
+been implemented from first principles.
+
+Standalone planar ordering lemma
+
+OrderingTheorem.StandardRadialFormLibrary supplies the general positive
+selfadjoint multiplication-sum to Friedrichs theorem, the integral
+ground-state transform, positive closed-form comparison and separated
+Sturm simplicity. StandardDirectSumLibrary supplies spectral and eigenspace
+decomposition for an actual unitary direct sum below the actual essential
+spectrum. The wrapper takes the paper's known positive L2 eigenvectors,
+the literal D closure and adjoint graphs, both product graph identities,
+and the selfadjoint operator sum on its intersection domain. It derives
+the partner Friedrichs realization and all ordering inequalities. The actual
+radial zeroth-order coefficients and the positive correction are explicitly
+locally integrable on the open half-line. This is the technical interpretation
+of the common-core differential forms, whose coefficient regularity is not
+spelled out in the manuscript lemma. The given positive eigenvectors need no
+smoothness premise. The general ground-transform input supplies their positive
+C1 representatives. No origin or tail bounds or separate finite-energy
+assumptions on the eigenvectors enter this general wrapper. Form energies are defined
+by operator-domain form-norm approximation, allowing arbitrary semibounded
+potentials without assuming separate global kinetic/potential integrability.
+The unitary and these universal background laws remain explicit inputs.
+
+Endpoint asymptotic supplement
+
+MonopoleEndpointAsymptotics.StandardOscillatorAsymptoticsLibrary states
+regular-singular and large-radius oscillator asymptotics uniformly for
+every nonnegative index and real energy. It specifies actual independent
+solutions, their Wronskians, origin value and derivative limits, Gaussian
+times power limits at infinity, and the associated L2 classifications.
+Infinite energy of the nonprincipal branch requires a strictly positive
+index. The q=+/-1 applications satisfy that condition. This is explicit
+Sturm-Liouville background, with no selected monopole state as an input.
+
+MonopoleCurrentBound adds no background hypothesis. It derives the exact
+factor-two L1 bound from the proved orthonormal frame, actual L2 momenta,
+mathlib Holder and Fubini theorems, and the proved inverse chart transport.
+
+Current domain supplement
+
+CurrentCompletion.StandardMagneticGraphLibrary states closedness of the
+actual distributional magnetic momentum graph and identifies the literal
+compact-core derivatives, uniformly for smooth fields and all particle
+numbers. KineticControl is a separate core form estimate controlling the
+L2 momentum norm by the shifted form norm. Form approximation, completeness
+and graph closedness then produce L2 momenta for every operator-domain
+vector. Fubini supplies the actual marginal-current integrability. The
+pointwise bounded and Gaussian current calculations add no assumptions.
+
+Coordinate and radial norm supplements
+
+MonopoleDifferential and MonopoleRadialIsometry add no background premises.
+They use actual derivatives, the explicit angular functions and the proved
+coordinate measure transport. The Cartesian chain rules and metric
+contraction likewise are proved from mathlib calculus and finite algebra.
+
+Planar endpoint branch supplement
+
+PlanarEndpointAsymptotics.StandardPlanarFrobeniusLibrary is the uniform
+regular-singular Sturm theorem for every smooth U with U(0)=0 and every
+real energy. Its branches are actual C2 solutions of D*D and DD*, with
+regular/logarithmic and r/r-inverse limits, derivative limits, Wronskians,
+local L2 classifications and the logarithmic branch's infinite kinetic
+energy. Both example coefficients are proved to satisfy its hypotheses.
+GaussianGap obtains the displayed lower bound four for nonzero L0
+eigenvalues from the existing radial library, with no new input.
+
+Passive spin
+
+PassiveSpin.StandardSpinLibrary is uniform spin-independent doubling of
+an actual spatial operator on spatial L2 times the two-point counting
+space. StandardExteriorLibrary is finite exterior-power filling of all
+shells below an isolated cutoff, together with exterior eigenfunction
+lifting. StandardSlaterReductionLibrary is the general finite-rank
+one-body reduction formula, stated with the literal normalized determinant
+and spin-summed marginal integrals. StandardSpinReversalLibrary transports
+the actual inverse-image conjugate operator, spectrum and multiplicity.
+The selected four orbitals, their orthonormality, doubled spatial density
+and zero current are calculated. The two-particle unrestricted filling
+and the higher energy of the fully polarized determinant are derived.
+These inputs apply to arbitrary orbitals, coefficients and occupied
+energies, with no Zeeman coupling.
+
+Exact numerical display
+
+ExpPolynomialMoments proves integrability and exact exponential moments
+from mathlib's Gamma integral. Its rational integral bounds use a literal
+polynomial identity and positivity. GaussianParameterBounds uses finite
+rational coefficients to enclose the unique normalization parameter.
+No approximate numerical value or quadrature rule is a background input.
+
+October submission assemblies
+
+ManyBodyDensity derives arbitrary-particle density integrability and mass
+from mathlib Fubini and the existing configuration-space definitions.
+The nodal-set supplement in OneParticleTheorem uses only the existing
+elliptic and unique-continuation inputs. PassiveSpinCounterexample derives
+a common positive gap from the existing spectral isolation and adds the
+already proved weak gauge obstruction. MonopoleSubmission combines the
+existing radial-density result, charge transport, compactness and
+StandardFormDomainLibrary for the same actual operators. None of these
+assemblies adds a background library or a new axiom.

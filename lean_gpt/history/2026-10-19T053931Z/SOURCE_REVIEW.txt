@@ -1,0 +1,101 @@
+October 2026 submission correspondence review
+
+The target is ../submission-Oct2026/LaestadiusCsirik_HK.tex. This update did
+not edit the manuscript. Its SHA-256 is
+
+0338c9a1017ff9e7e8629c57f500dc8e790ae970514afa74daf5f68dba10603c
+
+The comparison baseline is the manuscript at repository commit 69d0caa,
+JSP-draft/jsp_mag_hk.tex, whose SHA-256 matches the previous passing report
+
+f903ca44c2aba6d37e726f32bd2829e3c0943ecd2804631833b11c7e52dec668
+
+The section reviews compare the complete source diff with the actual Lean
+objects, theorem statements and explicit assumptions. Compilation and the
+axiom audit are separate checks recorded in verification.json.
+
+Preliminaries and one-particle proposition
+
+The proposition now explicitly says that the eigenvalues are real. The
+existing Lean statements already have E of type Real. The polar-decomposition
+summary now uses each state's own density. Reconstruction in Lean uses the
+literal local quotient identities and weak Hessians, so it does not depend
+on that editorial correction. The C1 representative, weak Hessian and
+current-domain interpretations in ASSUMPTIONS.txt remain unchanged.
+
+The preliminaries explicitly extend the definitions to arbitrary particle
+number. ManyBodyTimeReversal and GeneralGauge already use finite-particle
+configurations, actual antisymmetric L2 spaces, literal marginal currents
+and multiplication by the symmetric phase. ManyBodyDensity additionally
+proves nonnegative, integrable densities and their total mass for every
+positive particle number, directly by Fubini and coordinate splitting.
+
+The time-reversal proof now says that conjugation maps the plus-field form
+domain onto the minus-field form domain. Existing inverse-image operator
+and Friedrichs-form transport use exactly that interpretation.
+
+Noninteracting constructions and planar appendix
+
+The construction parameters, potentials, orbitals, normalizations and
+spectral thresholds are unchanged. The bounded auxiliary function formerly
+called h is now called gamma. It is the same function r/sqrt(1+r^2), named
+profileH in the existing Lean construction. The new notation does not change
+any formula or estimate.
+
+The Kohn-Sham implication is now rem:kohn-sham. It follows from the same
+bounded counterexample with identical scalar potential and gauge-inequivalent
+vector potentials. The passive-spin discussion is now rem:spin and explicitly
+states a positive excitation gap. PassiveSpin already includes spectral
+isolation in GroundState. PassiveSpinCounterexample exposes a common positive
+gap for both signs and joins the four-particle results to the proved weak
+gauge obstruction, retaining the unrestricted two-particle exclusion.
+
+The added Weyl-sequence explanation leads to the same essential-spectrum
+identity already obtained from StandardWeylLibrary and the checked coefficient
+bounds and decay. No new spectral premise is needed.
+
+The planar ordering display still uses an operator pairing after establishing
+only form-domain containment. The existing closed-form interpretation in
+OrderingNotes.txt is retained. No operator-domain assertion is inferred from
+form-domain membership.
+
+Monopole construction and appendix
+
+The angular determinant now has its own label eq:angular-determinant. It is
+MonopoleTrial.angularDet, with antisymmetry, normalization and its relation
+to the trial Slater determinant proved in that module. The angular probability
+in eq:angular-pair is its squared modulus, as before.
+
+The rotation argument clarifies that the ground eigenspace is a line and
+that the one-dimensional SU(2) action is trivial. Existing SpinGroup and
+MonopoleRayleigh proofs supply precisely this conclusion. Patchwise complex
+conjugation now explicitly reverses the transition exponent and the correlation
+proof reduces to positive charge. The already proved transition_conjugate
+and isSlater_conjugate_iff establish these steps.
+
+The free spectrum, endpoint branches, Friedrichs boundary condition,
+deficiency indices, Coulomb estimate, gap and current calculation are
+unchanged. The Hardy integral now displays its integration measures, and
+the positive parameter in Young's inequality is renamed delta. Both agree
+with the existing literal integrals and quantified positive real parameter.
+
+The submission-facing monopole results collect the shared radial physical
+density, compact resolvents and equality with the free form domains for the
+same operators. They use only the previously documented background libraries.
+
+Removed and editorial material
+
+The former discussion section is removed. Its passive-spin and Kohn-Sham
+material is retained as the two remarks above. ParamagneticDiscussion and
+MonopoleParamagnetic remain checked supplementary results, but their removed
+discussion is no longer a claim of the target manuscript.
+
+Other changes concern prose, cross-references, display layout, title matter,
+acknowledgments, the formal-verification disclosure, figure input paths and
+bibliographic order. They introduce no new mathematical proof obligation.
+Bibliographic priority, editorial material and schematic figures remain
+outside the formalization's scope.
+
+The standard background assumptions have not been expanded. The verifier
+now checks this submission's path and hash against coverage-review.json,
+and detects changes to the manuscript or Lean sources during a run.

@@ -1,0 +1,3 @@
+* text=auto eol=lf
+lean_gpt/verification.json -text
+lean_gpt/verification.log -text

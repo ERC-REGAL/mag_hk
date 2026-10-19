@@ -1,0 +1,15 @@
+.lake/
+__pycache__/
+*.pyc
+*.olean
+*.ilean
+*.aux
+*.log
+!verification.log
+*.out
+*.toc
+*.fls
+*.fdb_latexmk
+*.synctex.gz
+*.pdf
+*Name clash*

@@ -1,0 +1,98 @@
+Noninteracting construction coverage
+
+The module has no declared axioms and no proof placeholders. It proves
+concrete statements for real radial functions. Operator realization remains
+outside this module.
+
+Core checked constructions
+
+- Gaussian a and its derivative, positive magnetic-field coefficient,
+  current cancellation, and scalar factorization.
+- Gaussian radial f, its first and second derivative expressions, and the
+  literal zero-energy radial differential equation.
+- Bounded h, h', h'', R, a_t and U_t with actual derivative theorems.
+- The exact positive-margin estimate with numerator
+  20*(1-2/(3*sqrt(3)))-11, including its strict positivity.
+- Actual positive magnetic-field coefficient away from the axis.
+- The regular expression for a_t at the origin and continuity of U_t.
+- Integral-defined bounded f_t, positivity, derivative, and literal
+  zero-energy radial differential equation.
+- Exact f_t/f_0 comparison identity and both pointwise comparison bounds.
+- An IVT theorem with explicit continuity and endpoint hypotheses.
+
+Further concrete bounds developed in the module
+
+- f_t <= 1 and f_t <= f_0 on the nonnegative radial half-line.
+- U_0 >= 5 for r >= 1, f_0 <= exp(5)*exp(-5*r), and R <= r*exp(r).
+- Lower logarithmic bound for the comparison integral.
+- Pointwise limits of f_t as t tends to zero from above and to infinity.
+- Squared-integrand domination inequalities.
+
+Completed realization chain
+
+BoundedRealization, PlanarSpectralLibrary, AxialRealization, TensorRealization
+and FermionRealization connect the concrete orbitals to the actual
+antisymmetric ground-state realization. CounterexamplePair and
+NoninteractingTheorem include the opposite-field partner and weak gauge
+obstruction. OperatorPreliminaries supplies the explicit Sobolev domains
+and essential-spectrum formulas. The general operator background remains
+explicit, as permitted by the user.
+
+GaussianNormalization.lean proves the actual Gaussian normalization
+integral and its unique parameter. NormLimits.lean proves the bounded
+radial norm integrability and endpoint limits. ParameterContinuity.lean
+and NormContinuity.lean prove continuity and the actual equal-norm
+parameter, with no remaining endpoint or continuity assumptions.
+Cartesian.lean supplies smooth planar potentials, including the axis.
+RadialEndpoints.lean also defines and proves a smooth radial scalar
+extension. The spectral and Hilbert-space chain is listed above.
+
+Axis convention
+
+profileV uses Lean's total division at r=0. Its raw value there is not
+asserted to be the smooth Cartesian extension of the manuscript formula.
+All bounded radial eigen-equations involving profileV require r>0.
+The smooth extension is separately defined by regularProfileV in
+RadialEndpoints.lean and boundedScalar in Cartesian.lean. Its origin value
+is -24-2*t. Both definitions are proved smooth and agree with profileV
+away from the origin.
+
+Companion modules
+
+SecondOrbital.lean proves both literal second-orbital radial differential
+equations from actual first and second derivatives, including the sqrt(t)
+scaling. No derivative equalities are assumed in the final statements.
+
+Axial.lean proves the actual sech orbital differential equation, both
+factorization coefficients, positivity, smoothness, bounded potential,
+Lebesgue normalization, and integrability of the squared orbital. The
+spectral conclusions for the axial operator use separate standard operator
+theory inputs.
+
+CylindricalOrbitals.lean proves actual bounded-orbital normalization and
+orthogonality with the cylindrical volume element r dr dtheta dz. It
+establishes all four pairing integrability conditions, evaluates the
+angular phase integral, and applies Fubini with the actual radial and
+axial integrals. Its final parameter-existence result assumes only c > 0.
+
+CartesianOrbitals.lean proves that the weighted polar map preserves
+Lebesgue measure, including the angular endpoint convention, and defines
+the actual orbitals on the Euclidean xy plane represented by C, times R.
+It proves their pullback agrees almost everywhere with the cylindrical
+formulas and transfers all four pairing integrability conditions and
+integrals. Its final exists_bounded_orthonormal theorem has no orbital
+normalization or orthogonality assumptions. The Cartesian measure bridge
+is therefore closed for these bounded orbitals.
+
+OrbitalDomains.lean proves the concrete finite-energy inputs for the
+bounded radial realization. Both f_t and R*f_t are globally smooth, bounded
+near the origin, and have positive actual square integrals under r dr.
+The actual derivative squares times r and the angular term (R*f_t)^2/r
+are integrable. The proof also establishes integrability of the full
+magnetic and absolute scalar-potential energy integrands for m=0 and m=-1.
+These conclusions use the explicit functions and their proved decay, not
+assumed derivative or form-integrability hypotheses. The standard radial
+operator realization is handled separately.
+
+This note describes the radial construction and its companion modules.
+COVERAGE.txt provides the project-wide coverage verdict.

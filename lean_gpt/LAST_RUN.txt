@@ -1,0 +1,57 @@
+Fresh full verification completed
+
+Completed successfully at 2026-10-19T20:52:34.438988+00:00.
+
+Command
+    python verify.py --jobs 1
+
+All 141 Lean source files were freshly compiled in this completed run.
+No previously checked project artifact was reused. The run used a
+byte-identical local copy outside the synchronized development folder to
+reduce filesystem overhead. Compiler inputs, all Lean source bytes, the
+coverage review and the manuscript were compared again before copying
+these reports back to the development and release folders.
+
+The audit passed for 2043 theorems and 966 definitions.
+It inspected project-origin declarations, including private declarations,
+and found no axiom dependencies beyond propext, Classical.choice and
+Quot.sound. No sorryAx or additional axiom was accepted. All 140 expected
+imported project modules were present in the audited environment.
+
+Compiler, dependency, artifact and source-consistency checks passed.
+No manuscript or Lean source changed during the run. The completed
+correspondence review matches the exact checked snapshot.
+verification.json records true for lean_checks_passed,
+coverage_review_matches_sources and full_manuscript_verification.
+
+Checked manuscript
+    ../submission-Oct2026/LaestadiusCsirik_HK.tex
+
+Manuscript SHA-256
+    38512b4e9b467fb6f6e94805c65e287927f43868f63df65e0abf395250943a0d
+
+Compiler
+    Lean (version 4.34.0-rc2, x86_64-w64-windows-gnu, commit 6a10ac8c22beadecabdbb0919c2b50214762f91d, Release)
+
+Toolchain
+    leanprover/lean4:v4.34.0-rc2
+
+Mathlib revision
+    85e3a25e006c35636f0e53b0e9296caca2685bc0
+
+The four Python-wrapper regression tests passed. The manuscript compiled
+successfully to a 24-page PDF with no undefined references or overfull boxes.
+The existing underfull-box warning remains. Lean reported style and
+deprecation warnings, but no compiler errors.
+
+The previously completed run and correspondence review remain archived in
+history/2026-10-19T053931Z. Two preliminary scheduling attempts were stopped
+before any module completed. A later standalone diagnostic invocation was
+also stopped. None of those incomplete attempts supplied reused artifacts
+to this completed full run.
+
+Mathematical coverage remains relative to the explicit standard background
+inputs and domain and representative interpretations in ASSUMPTIONS.txt,
+COVERAGE.txt and coverage-review.json. The axiom audit does not discharge
+those hypotheses or establish manuscript correspondence. SOURCE_REVIEW.txt
+records the separate review of the final manuscript changes.

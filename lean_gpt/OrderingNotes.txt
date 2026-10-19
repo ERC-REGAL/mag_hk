@@ -1,0 +1,110 @@
+Ordering appendix audit
+
+Source location
+JSP-draft/submission-Oct2026/LaestadiusCsirik_HK.tex, app:planar and lem:ordering.
+TeX labels are used because the manuscript is being edited externally.
+
+What Ordering.lean checks
+
+The radial differential expression and Riccati potential are concrete real
+formulas. Lean proves both factorization formulas by the product rule
+expressed on a function's two-jet. The radial-measure term in the formal
+adjoint is retained. Both angular-sector difference identities and their
+strict positivity for every integer sector other than zero and minus one
+are proved.
+
+DomainOperator keeps an operator's domain as a linear subspace. The
+eigenvector transfer theorem proves that A(Dψ) belongs to Dom(D) when
+A(Dψ) = Eψ. Thus application of D a second time is justified at the
+abstract operator level. This statement applies with A equal to D*.
+
+The energy arguments derive the zero-sector dichotomy from actual norm
+and quadratic-form equalities. They do not assume that an excited energy
+is above λ. The other sectors use a positive form correction and the
+minus-one ground-state lower bound. The theorem for the quantitative
+partner bound applies to the oscillator example with μ equal to four.
+
+The spectral assembly proves that the only spectral values at or below λ
+are zero and λ, and that they occur in exactly their designated sectors.
+The multiplicity lemma combines radial ground-state simplicity with the
+direct-sum eigenspace decomposition. The strict spectral gap follows from
+isolation below the essential-spectrum threshold. This isolation input is
+necessary. Pointwise strict form inequalities alone do not provide a
+uniform gap across infinitely many angular sectors.
+
+The logarithmic cutoff derivative and exact annulus Dirichlet integral
+are formalized. The integral of 1/r on shrinking annuli is proved
+arbitrarily large, which is the scalar integral behind both forbidden
+origin branches. Equality of self-adjoint realizations is deduced from
+uniqueness of an extension of the common core.
+
+Analytic facts still supplied through explicit hypotheses
+
+RadialRealization.lean instantiates RadialOrderingData in the actual
+complex L²(r dr) space using literal quadratic-form integrals, a
+distributional weak-derivative predicate with smooth compact tests, and
+explicit operator domains. The general realization library is a
+universal premise rather than a mathlib construction of unbounded
+operators. Its facts give integral and domain identities, from which
+the eigenvalue comparisons are proved. BoundedRealization.lean
+discharges the concrete coefficient and solution hypotheses. The required
+standard results are the Friedrichs form construction, passage from a
+form core to the closed form, positivity and simplicity from the positive
+radial ground-state representation, integration against a strictly
+positive multiplier, and the adjoint/product domain facts for a closed
+densely defined operator. These are standard operator or Sturm theory.
+
+DiscreteSpectralAssembly uses the standard self-adjoint direct-sum
+spectral theorem and discreteness below the essential-spectrum threshold.
+It does not establish the relevant essential spectrum of either example.
+Those concrete hypotheses belong to the example modules and their
+analytic contracts.
+
+The exact cutoff calculation does not by itself construct a sequence in
+C_c∞, nor prove convergence of that sequence in the weighted graph norm.
+The remaining passage uses local boundedness of U, smoothing on annuli,
+the cutoff estimates, and density of smooth functions in the Sobolev
+norm. The endpoint asymptotics are proved for both examples in
+RadialEndpoints.lean and PartnerAsymptotics.lean. The limit-point
+uniqueness theorem remains a general operator-theory input. PlanarEndpointAsymptotics records the general smooth Frobenius theorem
+explicitly, with actual local solution branches, limits, Wronskians and
+energy classifications. It instantiates both example coefficients.
+The draft's hypotheses U = O(r) and smooth U yield the usual regular and
+logarithmic branches for D*D and the r and 1/r branches for DD*. Bounded or quadratically growing potentials at
+infinity give the required limit-point endpoint in these examples.
+
+Mathematical finding
+
+No contradictory ordering inequality was found. In the sector comparison
+display, the expression <ψ,L₋₁ψ> should be interpreted as the closed
+quadratic form q₋₁[ψ]. The preceding argument establishes only form-domain
+membership of ψ, which need not be operator-domain membership. Replacing
+that notation by q₋₁[ψ] makes the argument precise without changing it.
+
+Scope
+
+This file is a Lean verification of the algebra and conditional analytic
+deductions described above. It is not a claim that mathlib constructs the
+specific Friedrichs realizations, their Sobolev domains, or the endpoint
+classification without analytic assumptions.
+
+Standalone general lemma
+
+OrderingTheorem.lowest_two_planar_levels now handles the standalone lemma
+without the stronger endpoint hypotheses used for the two constructions.
+It takes actual radial Friedrichs graphs, the closure of d/dr+U, its adjoint,
+the D*D and DD* graph identities, the literal positive multiplication sum,
+positive L2 eigenvectors and an actual unitary direct sum. The radial
+zeroth-order potentials and positive correction are locally integrable on
+the open half-line. This explicit technical interpretation of the differential
+forms addresses coefficient regularity left implicit in the standalone
+manuscript statement. No smoothness is imposed on the given eigenfunctions.
+The universal ground-transform theorem supplies positive C1 representatives.
+There are no endpoint bounds or separate orbital-energy premises. General
+ground-state, closed-form and Sturm laws supply integral
+identities, from which the proof derives RadialOrderingData and both simple
+levels with a strict gap. The partner Friedrichs realization follows from
+a universal positive selfadjoint sum theorem. Form energies are actual
+form-norm limits, which avoids requiring separate kinetic and potential
+integrability for general semibounded radial problems. The concrete endpoint
+proofs and this abstract operator-domain route are separate applications.
